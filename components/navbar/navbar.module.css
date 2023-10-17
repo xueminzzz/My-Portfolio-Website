@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 2rem = 20px as my html is set to 10px */
+
+.navbar-ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+}
+
+/* 1em = 20px as parent element (navbar-ul) is set to 20px */
+
+.nav-item {
+    margin-right: 1em;
+}
+
+.nav-item:hover {
+    color: #F85F36;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 62.5em) {
+    .navbar-ul {
+        font-size: 1rem;
+    }
+}
