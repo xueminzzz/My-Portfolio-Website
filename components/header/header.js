@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className={styles["header-container"]}>
             <Image
-                src={`${prefix}"/avatar.svg`}
+                src={`${prefix}/avatar.svg`}
                 width={400}
                 height={400}
                 className={styles["avatar"]}
