@@ -10,6 +10,7 @@ export default function Header() {
                 width={400}
                 height={400}
                 className={styles["avatar"]}
+                priority
             />
             <div className={styles["information"]}>
                 <div className={styles.me}>Ng Xue Min</div>
