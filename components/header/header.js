@@ -10,12 +10,11 @@ export default function Header() {
                 width={400}
                 height={400}
                 className={styles["avatar"]}
-                priority
             />
 
             <div className={styles["information"]}>
-                <div className={styles.me}>Ng Xue Min</div>
-                <div className={styles.title}>Aspiring Software Developer</div>
+                <div className={styles["me"]}>Ng Xue Min</div>
+                <div className={styles["title"]}>Aspiring Software Developer</div>
                 <div className={styles["about-me-button"]}>
                     <button className={styles["about-me"]}>About Me</button>
                     <button className={styles["right-arrow"]}>About Me</button>
