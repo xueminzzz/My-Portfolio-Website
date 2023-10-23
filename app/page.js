@@ -12,9 +12,15 @@ export default function HomePage() {
       <Header />
       <div className={styles["projects"]}>
         <div className={styles["projects-header"]}>Projects</div>
-        <Projects 
+        <Projects
+          image="/cpf-project-placeholder.png"
           title="CREAITIVESTUDIOS x CPF"
           description="Redesigning CPF Mobile Application"
+        />
+        <Projects
+          image="/grab&go-project-placeholder.png"
+          title="Grab & Go"
+          description="Android Studios Mobile Application"
         />
       </div>
     </div>

@@ -6,7 +6,7 @@ export default function Projects(props) {
     return (
         <div className={styles["projects-card"]}>
             <Image
-                src={"/cpf-project-placeholder.png"}
+                src={props.image}
                 width={500}
                 height={500}
                 className={styles["project-placeholder"]}
