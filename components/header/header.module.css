@@ -89,6 +89,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .header-container {
+        align-items: flex-start;
+    }
+
     .avatar {
         height: 150px;
         width: 150px;
