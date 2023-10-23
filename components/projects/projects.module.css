@@ -1,6 +1,7 @@
 .projects-card {
     display: flex;
     flex-direction: column;
+    height: auto;
     align-items: center;
     justify-content: center;
 }
@@ -31,9 +32,10 @@
 }
 
 .project-placeholder:hover {
-    background-position: 0px 0px;
-    background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+    --offset: 0px;
     filter: grayscale(0);
+    display: flex;
+    align-self: center;
 }
 
 .project-title {
@@ -42,7 +44,6 @@
     font-weight: bold;
     display: flex;
     align-self: flex-start;
-
 }
 
 .project-description {
@@ -50,4 +51,34 @@
     font-size: 1.5rem;
     display: flex;
     align-self: flex-start;
+}
+
+@media screen and (max-width: 480px) {
+    .project-placeholder {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .project-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.5rem;
+    }
 }

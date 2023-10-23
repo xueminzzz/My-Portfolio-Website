@@ -11,3 +11,15 @@
     font-size: 4rem;
     font-weight: bold;
 }
+
+@media screen and (max-width: 480px) {
+    .projects-header {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projects-header {
+        font-size: 1.5rem;
+    }
+}
