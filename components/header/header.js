@@ -12,6 +12,7 @@ export default function Header() {
                 className={styles["avatar"]}
                 priority
             />
+
             <div className={styles["information"]}>
                 <div className={styles.me}>Ng Xue Min</div>
                 <div className={styles.title}>Aspiring Software Developer</div>
