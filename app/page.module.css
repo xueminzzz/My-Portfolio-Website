@@ -54,16 +54,19 @@
 
 .project3-border {
     --color: #2B5ADC;
-};
+}
+
 
 @media screen and (max-width: 1440px) {
     .projects {
         flex-direction: column;
         align-items: center;
     }
+
     .projects-header {
         font-size: 3.5rem;
     }
+
     .image-border {
         margin-top: 2rem;
         width: 500px;
@@ -75,6 +78,7 @@
     .projects-header {
         font-size: 2.5rem;
     }
+
     .image-border {
         width: 400px;
         height: 400px;
@@ -85,6 +89,7 @@
     .projects-header {
         font-size: 2rem;
     }
+
     .image-border {
         width: 300px;
         height: 300px;
@@ -95,6 +100,7 @@
     .projects-header {
         font-size: 1.5rem;
     }
+
     .image-border {
         width: 200px;
         height: 200px;
