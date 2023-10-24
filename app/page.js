@@ -15,7 +15,7 @@ export default function HomePage() {
         
         <Projects
           image="/cpf-project-placeholder.svg"
-          title="CREAITIVESTUDIOS x CPF"
+          title="Service Design Studio x CPF"
           description="Redesigning CPF Mobile Application"
           className={`${styles["image-border"]} ${styles["project1-border"]}`}
         />
