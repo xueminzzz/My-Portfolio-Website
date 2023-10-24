@@ -11,18 +11,18 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 400px;
-    height: 400px;
+    width: 900px;
+    height: 900px;
     text-align: justify;
 }
 
 .me {
-    font-size: 4rem;
+    font-size: 9rem;
     font-weight: bold;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 5rem;
     margin-top: -5rem;
     font-style: italic;
 }
@@ -35,7 +35,7 @@
 
 .about-me {
     width: fit-content;
-    font-size: 2rem;
+    font-size: 5rem;
     padding: 0.5em;
     border: none;
     background: #F85F36;
@@ -47,14 +47,48 @@
 .right-arrow {
     background: url(/arrow-right.svg) left top no-repeat;
     background-size: contain;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background-color: transparent;
     border: none;
     color: transparent;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
+    .avatar {
+        height: 400px;
+        width: 400px;
+    }
+
+    .information {
+        width: 400px;
+        height: 400px;
+    }
+
+    .me {
+        font-size: 3.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-top: -4rem;
+    }
+
+    .about-me-button {
+        margin-top: -4rem;
+    }
+
+    .about-me {
+        font-size: 2rem;
+    }
+
+    .right-arrow {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .avatar {
         height: 300px;
         width: 300px;

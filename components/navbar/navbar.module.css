@@ -8,7 +8,7 @@
 .navbar-ul {
     display: flex;
     list-style: none;
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 /* 1em = 20px as parent element (navbar-ul) is set to 20px */
@@ -22,8 +22,26 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 62.5em) {
+@media screen and (max-width: 1440px) {
+    .navbar-ul {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-ul {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .navbar-ul {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-ul {
+        font-size: 0.5rem;
     }
 }

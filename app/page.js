@@ -10,16 +10,17 @@ export default function HomePage() {
     <div>
       <Navbar />
       <Header />
+      <div className={styles["projects-header"]}>Projects</div>
       <div className={styles["projects"]}>
-        <div className={styles["projects-header"]}>Projects</div>
+        
         <Projects
-          image="/try.png"
+          image="/cpf-project-placeholder.svg"
           title="CREAITIVESTUDIOS x CPF"
           description="Redesigning CPF Mobile Application"
           className={`${styles["image-border"]} ${styles["project1-border"]}`}
         />
         <Projects
-          image="/grab&go-project-placeholder.png"
+          image="/grab&go-project-placeholder.svg"
           title="Grab & Go"
           description="Android Studios Mobile Application"
           className={`${styles["image-border"]} ${styles["project2-border"]}`}

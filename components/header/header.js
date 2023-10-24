@@ -7,8 +7,8 @@ export default function Header() {
         <div className={styles["header-container"]}>
             <Image
                 src={"/avatar.svg"}
-                width={400}
-                height={400}
+                width={900}
+                height={900}
                 className={styles["avatar"]}
             />
 
