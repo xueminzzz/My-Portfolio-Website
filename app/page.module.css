@@ -55,10 +55,18 @@
     .projects-header {
         font-size: 2rem;
     }
+    .image-border {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .projects-header {
         font-size: 1.5rem;
+    }
+    .image-border {
+        width: 200px;
+        height: 200px;
     }
 }
