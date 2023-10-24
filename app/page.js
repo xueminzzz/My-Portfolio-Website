@@ -13,14 +13,16 @@ export default function HomePage() {
       <div className={styles["projects"]}>
         <div className={styles["projects-header"]}>Projects</div>
         <Projects
-          image="/cpf-project-placeholder.png"
+          image="/try.png"
           title="CREAITIVESTUDIOS x CPF"
           description="Redesigning CPF Mobile Application"
+          className={`${styles["image-border"]} ${styles["project1-border"]}`}
         />
         <Projects
           image="/grab&go-project-placeholder.png"
           title="Grab & Go"
           description="Android Studios Mobile Application"
+          className={`${styles["image-border"]} ${styles["project2-border"]}`}
         />
       </div>
     </div>

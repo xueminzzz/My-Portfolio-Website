@@ -9,7 +9,7 @@ export default function Projects(props) {
                 src={props.image}
                 width={500}
                 height={500}
-                className={styles["project-placeholder"]}
+                className={props.className}
             />
             <div className={styles["project-title"]}>{props.title}</div>
             <div className={styles["project-description"]}>{props.description}</div>

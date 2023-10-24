@@ -12,6 +12,45 @@
     font-weight: bold;
 }
 
+.image-border {
+    margin-top: 2rem;
+    /* the border color */
+    --border: 10px;
+    /* the border thickness*/
+    --offset: 20px;
+    /* control the offset*/
+    --gap: 5px;
+    /* the gap on hover */
+
+    --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
+    --_o: calc(3*var(--offset));
+    padding:
+        calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
+    background:
+        linear-gradient(var(--_c)) var(--_o) var(--_o),
+        linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+    background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+    background-repeat: no-repeat;
+    filter: grayscale(.2);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.image-border:hover {
+    --offset: 0px;
+    filter: grayscale(0);
+    display: flex;
+    align-self: center;
+}
+
+.project1-border {
+    --color: #3CC157;
+}
+
+.project2-border {
+    --color: #FCBC0F;
+}
+
 @media screen and (max-width: 480px) {
     .projects-header {
         font-size: 2rem;
