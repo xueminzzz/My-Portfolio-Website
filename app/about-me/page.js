@@ -11,7 +11,7 @@ export default function AboutMe() {
                         I'm Xue Min, a 21-year-old student currently doing my undergraduate degree in <strong>Computer Science
                             and
                             Design</strong>
-                        at the <a className={styles["link"]}href="https://www.sutd.edu.sg/" target="_blank">Singapore University of Technology and Design
+                         at the <a className={styles["link"]}href="https://www.sutd.edu.sg/" target="_blank">Singapore University of Technology and Design
                             (SUTD)</a>. I am
                         interested in Software as a Service, where I get to create software solutions to solve real-world
                         problems.
