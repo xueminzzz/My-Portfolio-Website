@@ -35,18 +35,18 @@
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .description {
     margin-top: -2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .about-me-content {
     text-align: justify;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.5;
 }
 
@@ -71,8 +71,8 @@
 .close-button-dark {
     background: url(/close-button-dark.svg) left top no-repeat;
     background-size: contain;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: transparent;
     border: none;
 }
@@ -108,7 +108,7 @@
 .submit-button {
     width: fit-content;
     margin-top: 2em;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 0.8em;
     border: none;
     background: #ffffff;
