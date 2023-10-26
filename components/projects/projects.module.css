@@ -8,7 +8,7 @@
 
 .project-title {
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     align-self: flex-start;
@@ -16,7 +16,7 @@
 
 .project-description {
     margin-top: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-self: flex-start;
 }
