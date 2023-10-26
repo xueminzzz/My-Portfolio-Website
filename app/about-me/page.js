@@ -10,8 +10,8 @@ export default function AboutMe() {
                     <p className={styles["about-me-content"]}>
                         I'm Xue Min, a 21-year-old student currently doing my undergraduate degree in <strong>Computer Science
                             and
-                            Design</strong> at the <a className={styles["link"]}href="https://www.sutd.edu.sg/" target="_blank">Singapore University of Technology and Design
-                            (SUTD)</a>. I am
+                            Design</strong> at the <a className={styles["link"]} href="https://www.sutd.edu.sg/" target="_blank">Singapore University of Technology and Design
+                                (SUTD)</a>. I am
                         interested in Software as a Service, where I get to create software solutions to solve real-world
                         problems.
                         I am
@@ -41,6 +41,5 @@ export default function AboutMe() {
                 </div>
             </div>
         </body>
-
     );
 }

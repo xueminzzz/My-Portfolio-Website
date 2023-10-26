@@ -145,9 +145,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 802px) {
     .main-container {
         overflow: auto;
+        background-color: #396FED;
     }
 
     .parent-container {
