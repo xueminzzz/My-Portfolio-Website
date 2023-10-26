@@ -22,7 +22,7 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 1880px) {
+@media screen and (max-width: 2000px) {
     .navbar-ul {
         font-size: 2rem;
     }
