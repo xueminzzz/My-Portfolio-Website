@@ -11,18 +11,18 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     text-align: justify;
 }
 
 .me {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: bold;
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-top: -5rem;
     font-style: italic;
 }
@@ -30,12 +30,12 @@
 .about-me-button {
     display: flex;
     align-items: center;
-    margin-top: -5rem;
+    margin-top: -3rem;
 }
 
 .about-me {
     width: fit-content;
-    font-size: 5rem;
+    font-size: 3rem;
     padding: 0.5em;
     border: none;
     background: #F85F36;
@@ -47,8 +47,8 @@
 .right-arrow {
     background: url(/arrow-right.svg) left top no-repeat;
     background-size: contain;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: transparent;
     border: none;
     color: transparent;
