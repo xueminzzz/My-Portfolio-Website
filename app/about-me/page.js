@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function AboutMe() {
@@ -5,7 +6,12 @@ export default function AboutMe() {
         <body className={styles["main-container"]}>
             <div className={styles["parent-container"]}>
                 <div className={`${styles["child-container"]} ${styles["container-light"]}`}>
-                    <p className={styles["title"]}>About me.</p>
+                    <div className={styles["container-light-top"]}>
+                        <p className={styles["title"]}>About me.</p>
+                        <Link href="/">
+                            <button className={styles["close-button-light"]}></button>
+                        </Link>
+                    </div>
                     <p className={styles["description"]}>Aspiring Software Developer.</p>
                     <p className={styles["about-me-content"]}>
                         I'm Xue Min, a 21-year-old student currently doing my undergraduate degree in <strong>Computer Science
@@ -22,7 +28,9 @@ export default function AboutMe() {
                 <div className={`${styles["child-container"]} ${styles["container-dark"]}`}>
                     <div className={styles["container-dark-top"]}>
                         <p className={styles["title"]}>Let's chat.</p>
-                        <button className={styles["close-button"]}></button>
+                        <Link href="/">
+                            <button className={styles["close-button-dark"]}></button>
+                        </Link>
                     </div>
                     <p className={styles["description"]}>Open to work.</p>
                     <div>

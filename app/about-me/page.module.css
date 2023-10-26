@@ -62,12 +62,23 @@
     align-items: center;
 }
 
-.close-button {
-    background: url(/close-button.svg) left top no-repeat;
+.container-light-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button-dark {
+    background: url(/close-button-dark.svg) left top no-repeat;
     background-size: contain;
     width: 80px;
     height: 80px;
     background-color: transparent;
+    border: none;
+}
+
+.close-button-light {
+    background: transparent;
     border: none;
 }
 
@@ -107,10 +118,6 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .parent-container {
-        width: 80%;
-    }
-
     .child-container {
         padding: 5rem;
     }
@@ -127,9 +134,9 @@
         font-size: 1.5rem;
     }
 
-    .close-button {
-        height: 50px;
-        width: 50px;
+    .close-button-dark {
+        height: 40px;
+        width: 40px;
     }
 
     .line-input {
@@ -145,10 +152,15 @@
     }
 }
 
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 1024px) {
+    .parent-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .main-container {
         overflow: auto;
-        background-color: #396FED;
     }
 
     .parent-container {
@@ -160,12 +172,20 @@
     }
 
     .child-container {
-        padding: 50px;
         width: 90%;
     }
 
-    .close-button {
-        height: 40px;
+    .close-button-dark {
+        background: transparent;
+        border: none;
+    }
+
+    .close-button-light {
+        background: url(/close-button-light.svg) left top no-repeat;
+        background-size: contain;
         width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
     }
 }
