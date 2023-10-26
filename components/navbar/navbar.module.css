@@ -11,10 +11,10 @@
     font-size: 2rem;
 }
 
-/* 1em = 20px as parent element (navbar-ul) is set to 20px */
+/* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
 
 .nav-item {
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 
 .nav-item:hover {
