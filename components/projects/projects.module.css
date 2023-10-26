@@ -8,7 +8,7 @@
 
 .project-title {
     margin-top: 3rem;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     display: flex;
     align-self: flex-start;
@@ -16,12 +16,12 @@
 
 .project-description {
     margin-top: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     align-self: flex-start;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1800px) {
     .project-title {
         font-size: 2rem;
     }

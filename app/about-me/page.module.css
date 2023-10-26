@@ -117,7 +117,7 @@
     border: 1px solid white;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1800px) {
     .child-container {
         padding: 5rem;
     }

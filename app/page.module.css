@@ -9,12 +9,12 @@
 .projects-header {
     display: flex;
     justify-content: center;
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: bold;
 }
 
 .image-border {
-    margin-top: 4rem;
+    margin-top: 5rem;
     /* the border color */
     --border: 10px;
     /* the border thickness*/
@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1800px) {
     .projects {
         flex-direction: column;
         align-items: center;
