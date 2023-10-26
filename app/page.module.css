@@ -57,7 +57,7 @@
 }
 
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1880px) {
     .projects {
         flex-direction: column;
         align-items: center;

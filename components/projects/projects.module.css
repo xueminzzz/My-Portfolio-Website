@@ -21,7 +21,7 @@
     align-self: flex-start;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1880px) {
     .project-title {
         font-size: 2rem;
     }

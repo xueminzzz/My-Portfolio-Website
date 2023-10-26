@@ -54,7 +54,7 @@
     color: transparent;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1880px) {
     .avatar {
         height: 400px;
         width: 400px;
