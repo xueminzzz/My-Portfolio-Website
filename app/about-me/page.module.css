@@ -10,7 +10,7 @@
 
 .parent-container {
     display: flex;
-    width: 50%;
+    width: 70%;
     height: auto;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -18,7 +18,7 @@
 .child-container {
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding: 7rem;
     height: 100%;
     width: 100%;
 
@@ -35,18 +35,18 @@
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
 .description {
-    margin-top: -20px;
-    font-size: 0.8rem;
+    margin-top: -2rem;
+    font-size: 2.5rem;
 }
 
 .about-me-content {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 3rem;
     line-height: 1.5;
 }
 
@@ -65,8 +65,8 @@
 .close-button {
     background: url(/close-button.svg) left top no-repeat;
     background-size: contain;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background-color: transparent;
     border: none;
 }
@@ -79,7 +79,7 @@
     outline: none;
     transition: border-color 0.3s ease;
     color: #ffffff;
-    font-size: 0.85rem;
+    font-size: 3rem;
 }
 
 .line-input:hover {
@@ -87,18 +87,18 @@
 }
 
 .form {
-    font-size: 0.85rem;
+    font-size: 3rem;
 }
 
 .line-input-message {
-    height: 40px;
+    height: 8rem;
 }
 
 .submit-button {
     width: fit-content;
-    margin-top: 30px;
-    font-size: 1rem;
-    padding: 10px 15px;
+    margin-top: 2em;
+    font-size: 3rem;
+    padding: 0.8em;
     border: none;
     background: #ffffff;
     color: #396FED;
@@ -106,32 +106,46 @@
     border: 1px solid white;
 }
 
-@media screen and (max-width: 100em) {
-
-    .parent-container {
-        width: 60%;
-    }
-
-}
-
-@media screen and (max-width: 90em) {
-
-    .parent-container {
-        width: 70%;
-    }
-
-}
-
-@media screen and (max-width: 80em) {
-
+@media screen and (max-width: 1440px) {
     .parent-container {
         width: 80%;
     }
 
+    .child-container {
+        padding: 5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .about-me-content {
+        font-size: 1.5rem;
+    }
+
+    .close-button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .line-input {
+        font-size: 1.5rem;
+    }
+
+    .form {
+        font-size: 1.5rem;
+    }
+
+    .submit-button {
+        font-size: 1.5rem;
+    }
 }
 
-@media screen and (max-width: 62.5em) {
-
+@media screen and (max-width: 768px) {
     .main-container {
         overflow: auto;
     }
@@ -149,4 +163,8 @@
         width: 90%;
     }
 
+    .close-button {
+        height: 40px;
+        width: 40px;
+    }
 }
