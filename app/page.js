@@ -32,7 +32,6 @@ export default function HomePage() {
           className={`${styles["image-border"]} ${styles["project3-border"]}`}
         />
       </div>
-      <script src="./background-animation.js"></script>
     </div>
   )
 }
