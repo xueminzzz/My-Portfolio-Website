@@ -1,13 +1,14 @@
-import Image from 'next/image'
+"use client"
 import styles from './page.module.css'
-import Link from 'next/link'
 import Navbar from '@/components/navbar/navbar'
 import Header from '@/components/header/header'
 import Projects from '@/components/projects/projects'
+import Background from '@/components/background/background-animation'
 
 export default function HomePage() {
   return (
     <div>
+      <Background />
       <Navbar />
       <Header />
       <div className={styles["projects-header"]}>Projects</div>
@@ -31,6 +32,7 @@ export default function HomePage() {
           className={`${styles["image-border"]} ${styles["project3-border"]}`}
         />
       </div>
+      <script src="./background-animation.js"></script>
     </div>
   )
 }

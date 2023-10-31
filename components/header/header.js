@@ -2,15 +2,13 @@
 import Image from 'next/image';
 import styles from './header.module.css'
 import '@/app/globals.css'
-import AboutMe from '@/app/about-me/page.js'
-import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
     return (
         <div className={styles["header-container"]}>
             <Image
-                src={"/avatar.svg"}
+                src={"/avatar.svg"} priority={true}
                 width={600}
                 height={600}
                 className={styles["avatar"]}
