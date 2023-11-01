@@ -254,11 +254,11 @@
 
     .scroll {
         color: #000000;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .scroll-down-arrow {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
 }
