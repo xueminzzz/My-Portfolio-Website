@@ -1,7 +1,34 @@
-import Link from 'next/link';
-import styles from './page.module.css';
+"use client"
+import Link from 'next/link'
+import styles from './page.module.css'
+import { useForm } from 'react-hook-form'
+import sendEmail from '@/utils/sendEmail'
+import { useState } from 'react'
 
 export default function AboutMe() {
+    const form = useForm();
+
+    const { register, handleSubmit } = form;
+
+    const [responseMessage, setResponseMessage] = useState(
+        { isSuccessful: false, message: '' });
+
+    const onSubmit = (data) => {
+        try {
+            const req = sendEmail(data);
+            if (req.status === 250) {
+                setResponseMessage(
+                    { isSuccessful: true, message: 'Thank you for your message.' });
+            }
+        } catch (e) {
+            console.log(e);
+            setResponseMessage({
+                isSuccessful: false,
+                message: 'Oops something went wrong. Please try again.',
+            });
+        }
+    }
+
     return (
         <body className={styles["main-container"]}>
             <div className={styles["parent-container"]}>
@@ -34,18 +61,22 @@ export default function AboutMe() {
                     </div>
                     <p className={styles["description"]}>Open to work.</p>
                     <div>
-                        <p className={styles["form"]}>Name *</p>
-                        <input type="text" className={styles["line-input"]} alt="input name" required></input>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                            <div>
+                                <p className={styles["form"]}>Name *</p>
+                                <input type="text" id="name" className={styles["line-input"]} alt="input name" required={true} {...register("name")}></input>
+                            </div>
+                            <div>
+                                <p className={styles["form"]}>E-mail *</p>
+                                <input type="text" id="email" className={styles["line-input"]} alt="input email" required={true} {...register("email")}></input>
+                            </div>
+                            <div>
+                                <p className={styles["form"]}>Message *</p>
+                                <textarea id="message" className={styles["line-input"]} alt="input message" required={true} {...register("message")}></textarea>
+                            </div>
+                            <button className={styles["submit-button"]}>Send Message</button>
+                        </form>
                     </div>
-                    <div>
-                        <p className={styles["form"]}>E-mail *</p>
-                        <input type="text" className={styles["line-input"]} alt="input email" required></input>
-                    </div>
-                    <div>
-                        <p className={styles["form"]}>Message *</p>
-                        <textarea className={styles["line-input"]} alt="input message" required></textarea>
-                    </div>
-                    <button className={styles["submit-button"]}>Send Message</button>
                 </div>
             </div>
         </body>

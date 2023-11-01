@@ -1,6 +1,6 @@
 "use client"
 import styles from './background-animation.module.css'
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 export default function Background() {
   useEffect(() => {
