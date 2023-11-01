@@ -26,8 +26,10 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className={styles["scroll"]}>Scroll</div>
-            <div className={`${styles["scroll-down-arrow"]} ${styles["bounce"]}`}></div>
+            <div className={styles["scroll-container"]}>
+                <div className={styles["scroll"]}>scroll down to view projects</div>
+                <div className={`${styles["scroll-down-arrow"]} ${styles["bounce"]}`}></div>
+            </div>
         </div>
 
     )
