@@ -3,7 +3,7 @@ import axios from 'axios';
 const sendEmail = async (name, email, message) => {
     return axios({
         method: 'post',
-        url: '/api/mailApi',
+        url: './mailApi',
         data: {
             name: name,
             email: email,

@@ -10,24 +10,10 @@ export default function AboutMe() {
 
     const { register, handleSubmit } = form;
 
-    const [responseMessage, setResponseMessage] = useState(
-        { isSuccessful: false, message: '' });
-
     const onSubmit = (data) => {
-        try {
-            const req = sendEmail(data);
-            if (req.status === 250) {
-                setResponseMessage(
-                    { isSuccessful: true, message: 'Thank you for your message.' });
-            }
-        } catch (e) {
-            console.log(e);
-            setResponseMessage({
-                isSuccessful: false,
-                message: 'Oops something went wrong. Please try again.',
-            });
-        }
-    }
+        // sendEmail(data)
+        console.log("info received", data)
+    };
 
     return (
         <body className={styles["main-container"]}>
