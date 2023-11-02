@@ -1,19 +1,31 @@
 "use client"
 import Link from 'next/link'
 import styles from './page.module.css'
-import { useForm } from 'react-hook-form'
-import sendEmail from '@/utils/sendEmail'
 import { useState } from 'react'
 
 export default function AboutMe() {
-    const form = useForm();
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
 
-    const { register, handleSubmit } = form;
-
-    const onSubmit = (data) => {
-        // sendEmail(data)
-        console.log("info received", data)
-    };
+    const handleFormSubmission = async (e) => {
+        e.preventDefault()
+        try {
+            const res = await fetch('/api/sendEmail', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name,
+                    email,
+                    message,
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+        } catch (err) {
+            // Handle errors here
+        }
+    }
 
     return (
         <body className={styles["main-container"]}>
@@ -47,18 +59,41 @@ export default function AboutMe() {
                     </div>
                     <p className={styles["description"]}>Open to work.</p>
                     <div>
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form onSubmit={handleFormSubmission}>
                             <div>
                                 <p className={styles["form"]}>Name *</p>
-                                <input type="text" id="name" className={styles["line-input"]} alt="input name" required={true} {...register("name")}></input>
+                                <input
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                    type="text"
+                                    className={styles["line-input"]}
+                                    alt="input name"
+                                    required={true}
+                                >
+                                </input>
                             </div>
                             <div>
                                 <p className={styles["form"]}>E-mail *</p>
-                                <input type="text" id="email" className={styles["line-input"]} alt="input email" required={true} {...register("email")}></input>
+                                <input
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    type="email"
+                                    className={styles["line-input"]}
+                                    alt="input email"
+                                    required={true}
+                                >
+                                </input>
                             </div>
                             <div>
                                 <p className={styles["form"]}>Message *</p>
-                                <textarea id="message" className={styles["line-input"]} alt="input message" required={true} {...register("message")}></textarea>
+                                <textarea
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                    className={styles["line-input"]}
+                                    alt="input message"
+                                    required={true}
+                                >
+                                </textarea>
                             </div>
                             <button className={styles["submit-button"]}>Send Message</button>
                         </form>

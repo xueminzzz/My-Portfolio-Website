@@ -1,13 +1,21 @@
 const nodemailer = require('nodemailer');
 
 export default function handler(req, res) {
+    // res.status(200).json({ message: "Hello from Next.js!" })
+    // console.log(req.body)
+    const { name, email, message } = req.body
 
-    const message = {
+    const messageData = {
         from: req.body.email,
         to: process.env.MY_EMAIL,
-        subject: req.body.subject,
-        text: req.body.message,
-        html: `<p>${req.body.message}</p>`,
+        subject: "New Connection!",
+        text: `Hello,
+        
+        You have a new form entry from: ${name} ${email}.
+
+        ${message}
+        
+        `,
     };
 
     let transporter = nodemailer.createTransport({
@@ -19,7 +27,7 @@ export default function handler(req, res) {
     });
 
     if (req.method === 'POST') {
-        transporter.sendMail(message, (err, info) => {
+        transporter.sendMail(messageData, (err, info) => {
 
             if (err) {
                 res.status(404).json({
