@@ -19,7 +19,8 @@ export default function AboutMe() {
                     message,
                 }),
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
                 }
             });
         } catch (err) {

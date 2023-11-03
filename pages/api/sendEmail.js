@@ -1,43 +1,45 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer'
 
-export default function handler(req, res) {
-    // res.status(200).json({ message: "Hello from Next.js!" })
-    // console.log(req.body)
-    const { name, email, message } = req.body
+export default async function handler(req, res) {
+    if (req.method == "POST") {
 
-    const messageData = {
-        from: req.body.email,
-        to: process.env.MY_EMAIL,
-        subject: "New Connection!",
-        text: `Hello,
+        const { name, email, message } = req.body
+
+        if (!name || !email || !message) {
+            return res.status(400).json({ message: "Bad request" })
+        }
+
+        else {
+            const transporter = nodemailer.createTransport({
+                host: "smtp.gmail.com",
+                // service: 'gmail',
+                auth: {
+                    type: "OAuth2",
+                    user: "t2988061@gmail.com",
+                    clientId: "817441359522-qvrf1a6997vddubp4c1pdp91ld1p40k3.apps.googleusercontent.com",
+                    clientSecret: "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",
+                },
+            });
+            try {
+                await transporter.sendMail({
+                    from: "t2988061@gmail.com",
+                    to: "xuemin2809@gmail.com",
+                    subject: "New Connection!",
+                    text: `Hello,
         
-        You have a new form entry from: ${name} ${email}.
-
-        ${message}
+                You have a new form entry from: ${name} ${email}.
         
-        `,
-    };
+                ${message}
+        
+                `,
+                })
 
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.MY_EMAIL,
-            pass: process.env.MY_PASSWORD,
-        },
-    });
+                return res.status(200).json({ success: true })
 
-    if (req.method === 'POST') {
-        transporter.sendMail(messageData, (err, info) => {
-
-            if (err) {
-                res.status(404).json({
-                    error: `Connection refused at ${err.address}`
-                });
-            } else {
-                res.status(250).json({
-                    success: `Message delivered to ${info.accepted}`
-                });
+            } catch (error) {
+                return res.status(400).json({ message: error.message })
             }
-        });
+        }
     }
+    return res.status(400).json({ message: "Bad request" })
 }

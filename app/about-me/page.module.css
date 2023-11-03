@@ -6,6 +6,7 @@
     margin: 0;
     overflow: hidden;
     background-color: #ffffff;
+    background-size: contain;
 }
 
 .parent-container {
