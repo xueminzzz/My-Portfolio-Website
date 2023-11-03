@@ -160,16 +160,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main-container {
-        overflow: auto;
-    }
-
     .parent-container {
         flex-direction: column;
         align-items: center;
         box-shadow: none;
         height: 100%;
         width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .child-container {
