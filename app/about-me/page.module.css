@@ -103,6 +103,11 @@
 .form {
     font-size: 3rem;
 }
+
+.submit-container {
+    display: flex;
+}
+
 .submit-button {
     width: fit-content;
     margin-top: 2em;
@@ -116,8 +121,9 @@
 }
 
 .success-message {
-    font-size: 3rem;
-    margin-top: 1em;
+    font-size: 2.5rem;
+    margin-top: 2em;
+    margin-left: 2.5em;
 }
 
 @media screen and (max-width: 1536px) {
