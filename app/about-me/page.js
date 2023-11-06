@@ -32,7 +32,7 @@ export default function AboutMe() {
                 setName("");
                 setEmail("");
                 setMessage("");
-                setSuccessMessage("Message received, thank you!");
+                setSuccessMessage("Submitted!");
                 setTimeout(() => {
                     setSuccessMessage(null);
                 }, 2000);
@@ -113,12 +113,10 @@ export default function AboutMe() {
                                 >
                                 </textarea>
                             </div>
-                            <div className={styles["submit-container"]}>
-                                <button className={styles["submit-button"]} disabled={isLoading}>
-                                    {isLoading ? 'Submitting...' : 'Send Message'}
-                                </button>
-                                <div className={styles["success-message"]}>{successMessage}</div>
-                            </div>
+                            <button className={styles["submit-button"]} disabled={isLoading}>
+                                {isLoading ? 'Submitting...' : 'Send Message'}
+                            </button>
+                            <div className={styles["success-message"]}>{successMessage}</div>
                         </form>
                     </div>
                 </div>
