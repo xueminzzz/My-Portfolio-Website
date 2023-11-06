@@ -4,13 +4,15 @@ import styles from './page.module.css'
 import { useState } from 'react'
 
 export default function AboutMe() {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleFormSubmission = async (e) => {
         e.preventDefault()
+        setIsLoading(true)
         try {
             const res = await fetch('/api/sendEmail', {
                 method: 'POST',
@@ -34,7 +36,9 @@ export default function AboutMe() {
                 setTimeout(() => {
                     setSuccessMessage(null);
                 }, 2000);
+                setIsLoading(false);
             }
+
 
         } catch (err) {
             // Handle errors here
@@ -109,9 +113,11 @@ export default function AboutMe() {
                                 >
                                 </textarea>
                             </div>
-                            <button className={styles["submit-button"]}>Send Message</button>
+                            <button className={styles["submit-button"]} disabled={isLoading}>
+                                {isLoading ? 'Submitting...' : 'Send Message'}
+                            </button>
                         </form>
-                        <div className={styles["success-message"]} >{successMessage}</div>
+                        <div className={styles["success-message"]}>{successMessage}</div>
                     </div>
                 </div>
             </div>

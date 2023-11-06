@@ -93,6 +93,7 @@
     color: #ffffff;
     font-size: 3rem;
     font-family: 'futura';
+    zoom: 1;
 }
 
 .line-input:hover {
