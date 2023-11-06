@@ -124,6 +124,7 @@
     font-size: 2.5rem;
     margin-top: 2em;
     margin-left: 2.5em;
+    align-self: center;
 }
 
 @media screen and (max-width: 1536px) {
