@@ -6,30 +6,31 @@ export default async function handler(req, res) {
         const { name, email, message } = req.body
 
         if (!name || !email || !message) {
-            return res.status(400).json({ message: "Bad request" })
+            return res.status(400).json({ message: "Bad request 1" })
         }
 
         else {
             const transporter = nodemailer.createTransport({
-                host: "smtp.gmail.com",
-                // service: 'gmail',
+                service: 'gmail',
                 auth: {
-                    type: "OAuth2",
                     user: "t2988061@gmail.com",
-                    clientId: "817441359522-qvrf1a6997vddubp4c1pdp91ld1p40k3.apps.googleusercontent.com",
-                    clientSecret: "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",
+                    pass: "cerobkpyqbmprisn"
                 },
             });
             try {
-                await transporter.sendMail({
+                transporter.sendMail({
                     from: "t2988061@gmail.com",
-                    to: "xuemin2809@gmail.com",
+                    to: "t2988061@gmail.com",
                     subject: "New Connection!",
                     text: `Hello,
         
-                You have a new form entry from: ${name} ${email}.
+                You have a new form entry from:
+                 
+                Name: ${name} 
+                
+                Email: ${email}.
         
-                ${message}
+                Description: ${message}
         
                 `,
                 })
@@ -41,5 +42,5 @@ export default async function handler(req, res) {
             }
         }
     }
-    return res.status(400).json({ message: "Bad request" })
+    return res.status(400).json({ message: "Bad request 2" })
 }
