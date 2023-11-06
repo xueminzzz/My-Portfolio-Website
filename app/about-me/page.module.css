@@ -92,6 +92,7 @@
     transition: border-color 0.3s ease;
     color: #ffffff;
     font-size: 3rem;
+    font-family: 'futura';
 }
 
 .line-input:hover {
@@ -101,11 +102,6 @@
 .form {
     font-size: 3rem;
 }
-
-.line-input-message {
-    height: 8rem;
-}
-
 .submit-button {
     width: fit-content;
     margin-top: 2em;
@@ -116,6 +112,11 @@
     color: #396FED;
     font-weight: bold;
     border: 1px solid white;
+}
+
+.success-message {
+    font-size: 3rem;
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 1536px) {
@@ -149,6 +150,10 @@
     }
 
     .submit-button {
+        font-size: 1.5rem;
+    }
+
+    .success-message {
         font-size: 1.5rem;
     }
 }

@@ -7,6 +7,7 @@ export default function AboutMe() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    const [successMessage, setSuccessMessage] = useState(null);
 
     const handleFormSubmission = async (e) => {
         e.preventDefault()
@@ -23,6 +24,18 @@ export default function AboutMe() {
                     Accept: "application/json"
                 }
             });
+
+            if (res.status === 200) {
+                // Reset input fields and show success message
+                setName("");
+                setEmail("");
+                setMessage("");
+                setSuccessMessage("Message successfully sent, thank you!");
+                setTimeout(() => {
+                    setSuccessMessage(null);
+                }, 2000);
+            }
+
         } catch (err) {
             // Handle errors here
         }
@@ -98,6 +111,7 @@ export default function AboutMe() {
                             </div>
                             <button className={styles["submit-button"]}>Send Message</button>
                         </form>
+                        <div className={styles["success-message"]} >{successMessage}</div>
                     </div>
                 </div>
             </div>
