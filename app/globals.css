@@ -2,10 +2,6 @@
     font-size: 62.5%;
 }
 
-body {
-    font-size: 1.6rem;
-}
-
 @font-face {
     font-family: 'futura';
     src: url('futura.otf');
@@ -16,4 +12,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: 'futura';
+    font-size: 1.6rem;
+    background-size: contain;
 }
