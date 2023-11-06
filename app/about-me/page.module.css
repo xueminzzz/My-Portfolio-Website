@@ -106,6 +106,7 @@
 
 .submit-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .submit-button {
@@ -123,7 +124,6 @@
 .success-message {
     font-size: 2.5rem;
     margin-top: 2em;
-    margin-left: 2.5em;
     align-self: center;
 }
 
