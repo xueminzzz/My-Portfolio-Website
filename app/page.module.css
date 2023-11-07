@@ -56,6 +56,44 @@
   --color: #2B5ADC;
 }
 
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 2rem = 20px as my html is set to 10px */
+
+.navbar-ul {
+  display: flex;
+  list-style: none;
+  font-size: 2rem;
+}
+
+/* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
+
+.nav-item-home {
+  margin-right: 1.5em;
+  color: #F85F36;
+  font-weight: bold;
+}
+
+.nav-item-projects {
+  margin-right: 1.5em;
+}
+
+.nav-item-resume {
+  margin-right: 1.5em;
+}
+
+.nav-item:hover {
+  color: #F85F36;
+  font-weight: bold;
+}
+
+.projects-link {
+  text-decoration: none;
+  color: black;
+}
 
 @media screen and (max-width: 1536px) {
   .projects {
@@ -72,6 +110,10 @@
     width: 500px;
     height: 500px;
   }
+
+  .navbar-ul {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -82,6 +124,10 @@
   .image-border {
     width: 400px;
     height: 400px;
+  }
+
+  .navbar-ul {
+    font-size: 1.5rem;
   }
 }
 

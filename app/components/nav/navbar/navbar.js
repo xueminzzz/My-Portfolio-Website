@@ -1,6 +1,5 @@
 import styles from './navbar.module.css'
 import '@/app/globals.css'
-
 export default function Navbar() {
     return (
         <nav className={styles.navbar}>
