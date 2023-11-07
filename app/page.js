@@ -1,22 +1,20 @@
-'use client'
-import styles from './page.module.css'
-import Navbar from './components/nav/navbar/navbar'
-import Header from './components/header/header'
-import Projects from './components/projects/projects'
-import Background from './components/background/background-animation'
-import Link from 'next/link'
-import { useState } from 'react'
+"use client";
+import styles from "./page.module.css";
+import Header from "./components/header/header";
+import Projects from "./components/projects/projects";
+import Background from "./components/background/background-animation";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div>
       <Background />
       <nav className={styles.navbar}>
-        <ul className={styles['navbar-ul']}>
-          <Link href="#home" className={styles['projects-link']}>
+        <ul className={styles["navbar-ul"]}>
+          <Link href="#home" className={styles["projects-link"]}>
             <li className={`${styles["nav-item-home"]} ${styles["nav-item"]}`}>Home</li>
           </Link>
-          <Link href="#projects" className={styles['projects-link']}>
+          <Link href="#projects" className={styles["projects-link"]}>
             <li className={`${styles["nav-item-projects"]} ${styles["nav-item"]}`}>Projects</li>
           </Link>
           <li className={`${styles["nav-item-resume"]} ${styles["nav-item"]}`}>Resume</li>

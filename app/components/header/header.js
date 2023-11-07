@@ -1,8 +1,7 @@
-'use client'
-import Image from 'next/image';
-import styles from './header.module.css'
-import '@/app/globals.css'
-import Link from 'next/link';
+"use client"
+import Image from "next/image";
+import styles from "./header.module.css";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -31,6 +30,5 @@ export default function Header() {
                 <div className={`${styles["scroll-down-arrow"]} ${styles["bounce"]}`}></div>
             </div>
         </div>
-
     )
 }

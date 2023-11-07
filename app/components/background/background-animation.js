@@ -1,10 +1,10 @@
 "use client"
-import styles from './background-animation.module.css'
-import { useEffect } from 'react'
+import styles from "./background-animation.module.css";
+import { useEffect } from "react";
 
 export default function Background() {
   useEffect(() => {
-    console.log("component rendered")
+    // console.log("component rendered");
     // Some random colors
     const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
 
@@ -44,9 +44,9 @@ export default function Background() {
           iterations: Infinity,
           easing: "ease-in-out"
         }
-      );
-    });
-  }, []);
+      )
+    })
+  }, [])
   return (
     <div></div>
   )

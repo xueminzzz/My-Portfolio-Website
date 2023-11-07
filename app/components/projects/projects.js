@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import styles from './projects.module.css'
-import '@/app/globals.css'
+import Image from "next/image";
+import styles from "./projects.module.css";
 
 export default function Projects(props) {
     return (

@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
     if (req.method == "POST") {
@@ -8,12 +8,12 @@ export default async function handler(req, res) {
             return res.status(400).json({ message: "Bad request 1" });
         } else {
             const transporter = nodemailer.createTransport({
-                service: 'gmail',
+                service: "gmail",
                 auth: {
                     user: "t2988061@gmail.com",
                     pass: "cerobkpyqbmprisn"
                 },
-            });
+            })
 
             const sendMailPromise = new Promise((resolve, reject) => {
                 transporter.sendMail({
@@ -36,8 +36,8 @@ export default async function handler(req, res) {
                     } else {
                         resolve(info);
                     }
-                });
-            });
+                })
+            })
 
             try {
                 await sendMailPromise;

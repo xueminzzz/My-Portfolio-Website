@@ -1,7 +1,7 @@
 "use client"
-import Link from 'next/link'
-import styles from './page.module.css'
-import { useState } from 'react'
+import Link from "next/link";
+import styles from "./page.module.css";
+import { useState } from "react";
 
 export default function AboutMe() {
     const [name, setName] = useState("");
@@ -11,11 +11,11 @@ export default function AboutMe() {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleFormSubmission = async (e) => {
-        e.preventDefault()
-        setIsLoading(true)
+        e.preventDefault();
+        setIsLoading(true);
         try {
-            const res = await fetch('/api/sendEmail', {
-                method: 'POST',
+            const res = await fetch("/api/sendEmail", {
+                method: "POST",
                 body: JSON.stringify({
                     name,
                     email,
@@ -23,9 +23,8 @@ export default function AboutMe() {
                 }),
                 headers: {
                     "Content-Type": "application/json",
-                    Accept: "application/json"
                 }
-            });
+            })
 
             if (res.status === 200) {
                 // Reset input fields and show success message
@@ -122,5 +121,5 @@ export default function AboutMe() {
                 </div>
             </div>
         </body>
-    );
+    )
 }
