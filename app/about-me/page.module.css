@@ -181,6 +181,7 @@
         width: 100%;
         overflow-x: hidden;
         overflow-y: auto;
+        background-color: #396FED;
     }
 
     .child-container {
