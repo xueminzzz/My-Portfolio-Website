@@ -175,6 +175,7 @@
 @media screen and (max-width: 768px) {
     .main-container {
         background-color: #ffffff;
+        overflow: scroll;
     }
 
     .parent-container {
