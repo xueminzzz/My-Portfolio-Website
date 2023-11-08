@@ -70,16 +70,16 @@
 }
 
 .close-button-dark {
-    background: url(/close-button-dark.svg) left top no-repeat;
-    background-size: contain;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
+    background: transparent;
     border: none;
 }
 
 .close-button-light {
-    background: transparent;
+    background: url(/close-button-light.svg) left top no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
     border: none;
 }
 
@@ -144,7 +144,7 @@
         font-size: 1.5rem;
     }
 
-    .close-button-dark {
+    .close-button-light{
         height: 40px;
         width: 40px;
     }
@@ -188,16 +188,16 @@
     }
 
     .close-button-dark {
-        background: transparent;
-        border: none;
-    }
-
-    .close-button-light {
-        background: url(/close-button-light.svg) left top no-repeat;
+        background: url(/close-button-dark.svg) left top no-repeat;
         background-size: contain;
         width: 40px;
         height: 40px;
         background-color: transparent;
+        border: none;
+    }
+
+    .close-button-light {
+        background: transparent;
         border: none;
     }
 }
