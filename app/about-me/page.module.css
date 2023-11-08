@@ -144,7 +144,7 @@
         font-size: 1.5rem;
     }
 
-    .close-button-light{
+    .close-button-light {
         height: 40px;
         width: 40px;
     }
@@ -174,9 +174,9 @@
 
 @media screen and (max-width: 768px) {
     .main-container {
-        background-color: #396FED;
+        background-color: #ffffff;
     }
-    
+
     .parent-container {
         flex-direction: column;
         align-items: center;
@@ -189,6 +189,8 @@
 
     .child-container {
         width: 90%;
+        padding: 4rem;
+
     }
 
     .close-button-dark {
@@ -203,5 +205,15 @@
     .close-button-light {
         background: transparent;
         border: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        background-color: #396FED;
+    }
+
+    .child-container {
+        padding: 3rem;
     }
 }
