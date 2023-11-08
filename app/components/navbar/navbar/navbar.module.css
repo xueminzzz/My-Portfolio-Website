@@ -1,10 +1,17 @@
-.navbar {
+.main-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-icon {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-right: 1.5rem;
 }
 
 /* 2rem = 20px as my html is set to 10px */
-
 .navbar-ul {
     display: flex;
     list-style: none;
@@ -12,7 +19,6 @@
 }
 
 /* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
-
 .nav-item {
     margin-right: 1.5em;
 }
@@ -20,6 +26,11 @@
 .nav-item:hover {
     color: #F85F36;
     font-weight: bold;
+}
+
+.projects-link {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 1536px) {
@@ -38,10 +49,24 @@
     .navbar-ul {
         font-size: 1rem;
     }
+
+    .nav-item {
+        color: transparent;
+    }
+
+    .hamburger {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .navbar-ul {
         font-size: 0.5rem;
+    }
+
+    .hamburger {
+        height: 15px;
+        width: 15px;
     }
 }
