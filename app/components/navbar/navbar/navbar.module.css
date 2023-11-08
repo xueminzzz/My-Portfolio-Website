@@ -9,6 +9,7 @@
     justify-content: flex-end;
     position: absolute;
     margin-right: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 /* 2rem = 20px as my html is set to 10px */
@@ -52,6 +53,11 @@
 
     .nav-item {
         color: transparent;
+    }
+
+    .nav-item:hover {
+        color: transparent;
+        font-weight: normal;
     }
 
     .hamburger {
