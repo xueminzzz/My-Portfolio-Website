@@ -173,6 +173,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main-container {
+        background-color: #396FED;
+    }
+    
     .parent-container {
         flex-direction: column;
         align-items: center;
@@ -181,7 +185,6 @@
         width: 100%;
         overflow-x: hidden;
         overflow-y: auto;
-        background-color: #396FED;
     }
 
     .child-container {
