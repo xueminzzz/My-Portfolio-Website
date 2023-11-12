@@ -3,13 +3,15 @@ import styles from "./page.module.css";
 import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
 import Background from "./components/background/background-animation";
+import Navbar from "./components/navbar/navbar/navbar";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div>
       <Background />
-      <Header id="home" />
+      <Navbar />
+      <Header />
       <div className={styles["projects-header"]} id="projects">Projects</div>
       <div className={styles["projects"]}>
         <Link href="/sds-project">

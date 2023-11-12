@@ -4,17 +4,18 @@
     align-items: center;
 }
 
-.hamburger-icon {
+/* .hamburger-icon {
     display: flex;
     justify-content: flex-end;
     position: absolute;
     margin-right: 1.5rem;
     margin-top: 1.5rem;
-}
+} */
 
 /* 2rem = 20px as my html is set to 10px */
 .navbar-ul {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     font-size: 2rem;
 }
@@ -51,7 +52,7 @@
         font-size: 1rem;
     }
 
-    .nav-item {
+    /* .nav-item {
         color: transparent;
     }
 
@@ -63,7 +64,7 @@
     .hamburger {
         height: 30px;
         width: 30px;
-    }
+    } */
 }
 
 @media screen and (max-width: 320px) {
@@ -71,8 +72,8 @@
         font-size: 0.5rem;
     }
 
-    .hamburger {
+    /* .hamburger {
         height: 15px;
         width: 15px;
-    }
+    } */
 }
