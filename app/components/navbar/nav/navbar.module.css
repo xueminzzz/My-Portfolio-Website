@@ -4,12 +4,8 @@
     align-items: center;
 }
 
-/* .hamburger-icon {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    margin-right: 1.5rem;
-    margin-top: 1.5rem;
+/* .menu-icon {
+    display: none;
 } */
 
 /* 2rem = 20px as my html is set to 10px */
@@ -49,22 +45,21 @@
 
 @media screen and (max-width: 480px) {
     .navbar-ul {
-        font-size: 1rem;
+        display: none;
     }
 
-    /* .nav-item {
-        color: transparent;
-    }
-
-    .nav-item:hover {
-        color: transparent;
-        font-weight: normal;
+    .menu-icon {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
     }
 
     .hamburger {
         height: 30px;
         width: 30px;
-    } */
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -72,8 +67,8 @@
         font-size: 0.5rem;
     }
 
-    /* .hamburger {
+    .hamburger {
         height: 15px;
         width: 15px;
-    } */
+    }
 }

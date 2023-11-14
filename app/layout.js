@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "./components/navbar/navbar/navbar";
+import Navbar from "./components/navbar/nav/navbar";
 import Background from "./components/background/background-animation";
 // import { Inter } from "next/font/google"
 

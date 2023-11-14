@@ -1,6 +1,18 @@
-.main-container {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    margin-right: 1.5rem;
+.sidebar {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        display: flex;
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        margin-right: 1.5rem;
+        /* margin-top: 1.5rem; */
+    }
 }
