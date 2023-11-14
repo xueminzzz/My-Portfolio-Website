@@ -48,15 +48,12 @@
         display: none;
     }
 
-    .menu-icon {
+    .hamburger {
         display: flex;
         justify-content: flex-end;
         position: absolute;
         margin-right: 1.5rem;
         margin-top: 1.5rem;
-    }
-
-    .hamburger {
         height: 30px;
         width: 30px;
     }

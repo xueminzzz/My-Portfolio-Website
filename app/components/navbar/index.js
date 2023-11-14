@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Navbar from "./nav/navbar";
-import Sidebar from "./sidebar/sidebar";
+import Navbar from "./navbar-desktop/navbar-desktop";
+import Sidebar from "./navbar-mobile/navbar-mobile";
 
 export default function Navigation() {
   // toggle sidebar
