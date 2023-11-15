@@ -7,12 +7,7 @@ import { useState } from "react";
 export default function Sidebar({ isOpen, toggle }) {
 
     return (
-        <div className={styles["sidebar"]}
-            style={{
-                opacity: `${isOpen ? "1" : "0"}`,
-                top: ` ${isOpen ? "0" : "-100%"}`,
-            }}
-        >
+        <div className={isOpen ? styles["mobile-menu-open"] : styles["mobile-menu-close"]}>
             <button onClick={toggle}>X</button>
             <ul className={styles["navbar-ul"]}>
                 <Link href="/" className={styles["projects-link"]}>

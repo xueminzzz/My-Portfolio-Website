@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Navbar(toggle) {
+export default function Navbar({toggle}) {
     return (
-        <div className={styles["main-container"]} onClick={toggle}>
-            <Image
+        <div className={styles["main-container"]} >
+            <Image onClick={() => { toggle; console.log("Toggle clicked!"); }}
                 src={"/hamburger-icon.svg"} priority={true}
                 width={0}
                 height={0}

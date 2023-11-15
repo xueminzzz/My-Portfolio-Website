@@ -1,12 +1,12 @@
-.sidebar {
-    display: none;
+.mobile-menu-open {
+    opacity: 1;
+}
+
+.mobile-menu-close {
+    opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
-    .sidebar {
-        display: flex;
-    }
-
     .navbar-ul {
         display: flex;
         flex-direction: column;

@@ -9,6 +9,7 @@ export default function Navigation() {
 
   const toggle = () => {
     setIsOpen(!isOpen);
+    console.log("Toggle clicked! isOpen:", !isOpen);
   };
 
   return (
