@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
-import Navbar from "./navbar-desktop/navbar-desktop";
-import Sidebar from "./navbar-mobile/navbar-mobile";
+import Navbar from "./navbar-desktop/index";
+import Sidebar from "./navbar-mobile/index";
 
 export default function Navigation() {
+  console.log("Navigation component rendered");
   // toggle sidebar
   const [isOpen, setIsOpen] = useState(false);
 

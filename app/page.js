@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
 import Background from "./components/background/background-animation";
-import Navbar from "./components/navbar/navbar-desktop/navbar-desktop";
-import Sidebar from "./components/navbar/navbar-mobile/navbar-mobile";
+import Navbar from "./components/navbar/navbar-desktop";
+import Sidebar from "./components/navbar/navbar-mobile";
 import Link from "next/link";
 
 export default function HomePage() {
