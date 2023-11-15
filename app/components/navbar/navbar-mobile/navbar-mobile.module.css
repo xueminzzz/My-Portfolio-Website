@@ -1,0 +1,17 @@
+.mobile-menu-open {
+    opacity: 1;
+}
+
+.mobile-menu-close {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        margin-right: 1.5rem;
+    }
+}

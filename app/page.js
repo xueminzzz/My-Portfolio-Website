@@ -3,16 +3,20 @@ import styles from "./page.module.css";
 import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
 import Background from "./components/background/background-animation";
+import Navbar from "./components/navbar/navbar-desktop/navbar-desktop";
+import Sidebar from "./components/navbar/navbar-mobile/navbar-mobile";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div>
       <Background />
-      <Header id="home" />
+      <Navbar />
+      <Sidebar />
+      <Header />
       <div className={styles["projects-header"]} id="projects">Projects</div>
       <div className={styles["projects"]}>
-        <Link href="/sds-project">
+        <Link href="/projects/sds-project" className={styles["projects-link"]}>
           <Projects
             image="/sds-project-placeholder.svg"
             title="Service Design Studio x CPF"
@@ -20,7 +24,7 @@ export default function HomePage() {
             className={`${styles["image-border"]} ${styles["project1-border"]}`}
           />
         </Link>
-        <Link href="/infosys-project">
+        <Link href="/projects/infosys-project" className={styles["projects-link"]}>
           <Projects
             image="/infosys-project-placeholder.svg"
             title="Grab & Go"
@@ -28,7 +32,7 @@ export default function HomePage() {
             className={`${styles["image-border"]} ${styles["project2-border"]}`}
           />
         </Link>
-        <Link href="/compstruc-project">
+        <Link href="/projects/compstruc-project" className={styles["projects-link"]}>
           <Projects
             image="/compstruc-project-placeholder.svg"
             title="NHOMP"

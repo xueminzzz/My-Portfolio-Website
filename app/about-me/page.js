@@ -45,7 +45,7 @@ export default function AboutMe() {
     }
 
     return (
-        <body className={styles["main-container"]}>
+        <div className={styles["main-container"]}>
             <div className={styles["parent-container"]}>
                 <div className={`${styles["child-container"]} ${styles["container-dark"]}`}>
                     <div className={styles["container-dark-top"]}>
@@ -121,6 +121,6 @@ export default function AboutMe() {
                     </p>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }
