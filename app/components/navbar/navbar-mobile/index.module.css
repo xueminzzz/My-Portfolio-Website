@@ -1,17 +1,27 @@
-.mobile-menu-open {
-    opacity: 1;
-}
-
-.mobile-menu-close {
-    opacity: 1;
+.sidebar {
+    display: none;
 }
 
 @media screen and (max-width: 480px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /* position: absolute; */
+        margin-right: 1.5rem;
+    }
+
+    .close-button {
+        background: url(/close-button-black.svg) left top no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+    }
+
     .navbar-ul {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        position: absolute;
-        margin-right: 1.5rem;
     }
 }

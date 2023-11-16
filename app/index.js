@@ -1,7 +1,6 @@
-import Header from "./header";
+import Header from "./components/header/header";
 
 export default function Try() {
-    console.log("hi")
     return (
         <>
             <Header

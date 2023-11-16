@@ -7,12 +7,13 @@ import { useState } from "react";
 export default function Navbar({toggle}) {
     return (
         <div className={styles["main-container"]} >
-            <Image onClick={() => { toggle; console.log("Toggle clicked!"); }}
+            <button onClick={toggle} className={styles["hamburger"]}></button>
+            {/* <Image onClick={toggle}
                 src={"/hamburger-icon.svg"} priority={true}
                 width={0}
                 height={0}
                 className={styles["hamburger"]}
-            />
+            /> */}
             <nav>
                 <ul className={styles["navbar-ul"]}>
                     <Link href="/" className={styles["projects-link"]}>

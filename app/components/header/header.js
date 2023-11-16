@@ -3,8 +3,7 @@ import Image from "next/image";
 import styles from "./header.module.css";
 import Link from "next/link";
 
-export default function Header({greeting}) {
-    console.log(greeting)
+export default function Header() {
     return (
         <div className={styles["main-container"]}>
             <div className={styles["header-container"]}>
@@ -13,7 +12,6 @@ export default function Header({greeting}) {
                     width={500}
                     height={500}
                     className={styles["avatar"]}
-                    onClick={() => {console.log(greeting);}}
                 />
 
                 <div className={styles["information"]}>
