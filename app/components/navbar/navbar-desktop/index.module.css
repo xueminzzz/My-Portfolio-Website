@@ -53,6 +53,7 @@
         justify-content: flex-end;
         /* position: absolute; */
         margin-right: 1.5rem;
+        margin-top: 1.5rem;
         background: url(/hamburger-icon.svg) left top no-repeat;
         background-size: contain;
         width: 30px;
