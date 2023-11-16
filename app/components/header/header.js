@@ -4,6 +4,7 @@ import styles from "./header.module.css";
 import Link from "next/link";
 
 export default function Header({greeting}) {
+    console.log(greeting)
     return (
         <div className={styles["main-container"]}>
             <div className={styles["header-container"]}>

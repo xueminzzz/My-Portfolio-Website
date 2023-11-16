@@ -1,4 +1,3 @@
-"use client";
 import styles from "./page.module.css";
 import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
@@ -13,7 +12,9 @@ export default function HomePage() {
       <Background />
       <Navbar />
       <Sidebar />
-      <Header />
+      <Header 
+        // greeting="hello"
+      />
       <div className={styles["projects-header"]} id="projects">Projects</div>
       <div className={styles["projects"]}>
         <Link href="/projects/sds-project" className={styles["projects-link"]}>
