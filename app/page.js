@@ -3,25 +3,14 @@ import styles from "./page.module.css";
 import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
 import Background from "./components/background/background-animation";
-import Navbar from "./components/navbar/navbar-desktop/index";
-import Sidebar from "./components/navbar/navbar-mobile/index";
-// import Navigation from "./components/navbar";
+import Navigation from "./components/navbar";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function HomePage() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-    console.log("Toggle clicked! isOpen:", !isOpen);
-  };
-
   return (
     <div>
       <Background />
-      <Navbar toggle={toggle}/>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Navigation />
       <Header />
       <div className={styles["projects-header"]} id="projects">Projects</div>
       <div className={styles["projects"]}>

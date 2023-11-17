@@ -5,25 +5,37 @@
 @media screen and (max-width: 480px) {
     .sidebar {
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
         flex-direction: column;
-        align-items: flex-end;
-        /* position: absolute; */
-        margin-right: 1.5rem;
-    }
-
-    .close-button {
-        background: url(/close-button-black.svg) left top no-repeat;
-        background-size: contain;
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border: none;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: white;
     }
 
     .navbar-ul {
         display: flex;
         flex-direction: column;
-        font-size: 1rem;
+        font-size: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 4rem;
+    }
+
+    .nav-item {
+        line-height: 4rem;
+    }
+
+    .nav-item:hover {
+        color: #F85F36;
+        font-weight: bold;
+    }
+
+    .projects-link {
+        text-decoration: none;
+        color: black;
     }
 }
 

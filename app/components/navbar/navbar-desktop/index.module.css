@@ -50,14 +50,28 @@
 
     .hamburger {
         display: flex;
-        justify-content: flex-end;
-        /* position: absolute; */
-        margin-right: 1.5rem;
-        margin-top: 1.5rem;
+        position: absolute;
+        top: 0; 
         background: url(/hamburger-icon.svg) left top no-repeat;
         background-size: contain;
         width: 30px;
         height: 30px;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    .close-button {
+        display: flex;
+        position: absolute;
+        top: 0; 
+        background: url(/close-button-black.svg) left top no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
         background-color: transparent;
         border: none;
     }

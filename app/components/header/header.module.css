@@ -39,10 +39,14 @@
     display: flex;
     align-items: center;
     margin-top: -3rem;
+    height: 6rem;
+    width: fit-content;
+    background-color: aqua;
 }
 
 .about-me {
-    width: fit-content;
+    height: 40px;
+    width: 120px;
     font-size: 3rem;
     padding: 0.5em;
     border: none;
@@ -53,6 +57,8 @@
 }
 
 .right-arrow {
+    height: 40px;
+    width: 120px;
     background: url(/arrow-right.svg) left top no-repeat;
     background-size: contain;
     width: 60px;
@@ -88,6 +94,7 @@
 
     .about-me-button {
         margin-top: -4rem;
+        height: 4rem;
     }
 
     .about-me {
@@ -122,6 +129,7 @@
 
     .about-me-button {
         margin-top: -4rem;
+        height: 3rem;
     }
 
     .about-me {
@@ -165,6 +173,7 @@
 
     .about-me-button {
         margin-top: -2rem;
+        height: 1rem;
     }
 
     .about-me {
@@ -234,21 +243,23 @@
     }
 
     .title {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         margin-top: -1.5rem;
     }
 
     .about-me-button {
         margin-top: -1.5rem;
+        height: 0.8rem;
     }
 
     .about-me {
-        font-size: 0.5rem;
+        height: 0.8rem;
+        font-size: 0.8rem;
     }
 
     .right-arrow {
-        height: 5px;
-        width: 5px;
+        height: 8px;
+        width: 8px;
     }
 
     .scroll {

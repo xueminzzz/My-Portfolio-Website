@@ -4,16 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Navbar({toggle}) {
+export default function Navbar({ isOpen, toggle }) {
     return (
         <div className={styles["main-container"]} >
-            <button onClick={toggle} className={styles["hamburger"]}></button>
-            {/* <Image onClick={toggle}
-                src={"/hamburger-icon.svg"} priority={true}
-                width={0}
-                height={0}
-                className={styles["hamburger"]}
-            /> */}
+            <button onClick={toggle} className={isOpen ? styles["close-button"] : styles["hamburger"]}>
+            </button>
             <nav>
                 <ul className={styles["navbar-ul"]}>
                     <Link href="/" className={styles["projects-link"]}>
