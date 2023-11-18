@@ -12,12 +12,12 @@ export default function Sidebar({ isOpen, toggle }) {
         }}>
             <ul className={styles["navbar-ul"]} >
                 <Link href="/" className={styles["projects-link"]}>
-                    <li className={styles["nav-item"]}>Home</li>
+                    <li className={styles["nav-item"]} onClick={toggle}>Home</li>
                 </Link>
                 <Link href="#projects" className={styles["projects-link"]}>
-                    <li className={styles["nav-item"]}>Projects</li>
+                    <li className={styles["nav-item"]} onClick={toggle}>Projects</li>
                 </Link>
-                <li className={styles["nav-item"]}>Resume</li>
+                <li className={styles["nav-item"]} onClick={toggle}>Resume</li>
             </ul>
         </div>
     )
