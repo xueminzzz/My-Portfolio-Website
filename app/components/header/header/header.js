@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./header.module.css";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({toggleAboutMe}) {
 
     return (
         <div className={styles["main-container"]}>
@@ -18,12 +18,12 @@ export default function Header() {
                 <div className={styles["information"]}>
                     <div className={styles["me"]}>Ng Xue Min</div>
                     <div className={styles["title"]}>Aspiring Software Developer</div>
-                    <div className={styles["about-me-container"]}>
-                        <Link href="/about-me">
-                            <button className={styles["about-me-button"]}>About Me</button>
-                        </Link>
-                        <button className={styles["right-arrow"]}></button>
-                    </div>
+                    {/* <Link href="/about-me" className={styles["link"]}> */}
+                        <div className={styles["about-me-container"]}>
+                            <button className={styles["about-me-button"]} onClick={toggleAboutMe}>About Me</button>
+                            <button className={styles["right-arrow"]}></button>
+                        </div>
+                    {/* </Link> */}
                 </div>
             </div>
             <div className={styles["scroll-container"]}>

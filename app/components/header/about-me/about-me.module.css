@@ -6,6 +6,8 @@
     margin: 0;
     background-color: #ffffff;
     background-size: contain;
+    position: absolute;
+    top: 0;
 }
 
 .parent-container {
@@ -212,7 +214,7 @@
         background-color: #396FED;
     }
 
-    .child-container { 
+    .child-container {
         padding: 3rem;
     }
 }
