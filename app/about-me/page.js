@@ -1,7 +1,9 @@
 "use client"
 import Link from "next/link";
-import styles from "./about-me.module.css";
+import styles from "./page.module.css";
 import { useState } from "react";
+// import { HeaderContext } from "../header/header";
+// import { useContext } from "react";
 
 export default function AboutMe() {
     const [name, setName] = useState("");
@@ -45,16 +47,14 @@ export default function AboutMe() {
     }
 
     return (
-        <div className={styles["main-container"]} style={{
-            opacity: `${Open ? "1" : "0"}`,
-        }}>
+        <div className={styles["main-container"]}>
             <div className={styles["parent-container"]}>
                 <div className={`${styles["child-container"]} ${styles["container-dark"]}`}>
                     <div className={styles["container-dark-top"]}>
                         <p className={styles["title"]}>Let's chat.</p>
-                        {/* <Link href="/"> */}
+                        <Link href="/">
                             <button className={styles["close-button-dark"]}></button>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                     <p className={styles["description"]}>Open to work.</p>
                     <div>
@@ -105,9 +105,9 @@ export default function AboutMe() {
                 <div className={`${styles["child-container"]} ${styles["container-light"]}`}>
                     <div className={styles["container-light-top"]}>
                         <p className={styles["title"]}>About me.</p>
-                        {/* <Link href="/"> */}
+                        <Link href="/">
                             <button className={styles["close-button-light"]}></button>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                     <p className={styles["description"]}>Aspiring Software Developer.</p>
                     <p className={styles["about-me-content"]}>
