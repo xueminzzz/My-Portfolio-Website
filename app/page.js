@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div>
-      <Background />
+      {/* <Background /> */}
       <Navigation />
       <Header />
       <div className={styles["projects-header"]} id="projects">Projects</div>
