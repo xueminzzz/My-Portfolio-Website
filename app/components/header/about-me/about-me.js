@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./about-me.module.css";
 import { useState } from "react";
 
-export default function AboutMe({Open, toggleAboutMe}) {
+export default function AboutMe() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -53,7 +53,7 @@ export default function AboutMe({Open, toggleAboutMe}) {
                     <div className={styles["container-dark-top"]}>
                         <p className={styles["title"]}>Let's chat.</p>
                         {/* <Link href="/"> */}
-                            <button className={styles["close-button-dark"]} onClick={toggleAboutMe}></button>
+                            <button className={styles["close-button-dark"]}></button>
                         {/* </Link> */}
                     </div>
                     <p className={styles["description"]}>Open to work.</p>
@@ -106,7 +106,7 @@ export default function AboutMe({Open, toggleAboutMe}) {
                     <div className={styles["container-light-top"]}>
                         <p className={styles["title"]}>About me.</p>
                         {/* <Link href="/"> */}
-                            <button className={styles["close-button-light"]} onClick={toggleAboutMe}></button>
+                            <button className={styles["close-button-light"]}></button>
                         {/* </Link> */}
                     </div>
                     <p className={styles["description"]}>Aspiring Software Developer.</p>
