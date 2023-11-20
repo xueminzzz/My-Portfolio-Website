@@ -1,3 +1,7 @@
+.main-container {
+  overflow-x: hidden;
+}
+
 .projects {
   display: flex;
   justify-content: space-evenly;

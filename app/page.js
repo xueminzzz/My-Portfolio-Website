@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div>
+    <body className={styles["main-container"]}>
       <Background />
       <Navigation />
       <Header />
@@ -39,6 +39,6 @@ export default function HomePage() {
           />
         </Link>
       </div>
-    </div>
+    </body>
   )
 }
