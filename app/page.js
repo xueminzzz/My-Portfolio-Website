@@ -1,6 +1,6 @@
 "use client"
 import styles from "./page.module.css";
-import Header from "./components/header/header/header";
+import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
 import Background from "./components/background/background-animation";
 import Navigation from "./components/navbar";

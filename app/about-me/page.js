@@ -2,8 +2,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { useState } from "react";
-// import { HeaderContext } from "../header/header";
-// import { useContext } from "react";
 
 export default function AboutMe() {
     const [name, setName] = useState("");
