@@ -13,7 +13,7 @@
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    font-size: 2rem;
+    font-size: 2.49rem;
 }
 
 /* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
@@ -33,13 +33,25 @@
 
 @media screen and (max-width: 1536px) {
     .navbar-ul {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-ul {
+        font-size: 1.75rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .navbar-ul {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navbar-ul {
+        font-size: 1rem;
     }
 }
 
@@ -54,8 +66,8 @@
         top: 0; 
         background: url(/hamburger-icon.svg) left top no-repeat;
         background-size: contain;
-        width: 30px;
-        height: 30px;
+        width: 22.6px;
+        height: 22.6px;
         margin-top: 1.5rem;
         margin-right: 1.5rem;
         background-color: transparent;
@@ -68,8 +80,8 @@
         top: 0; 
         background: url(/close-button-black.svg) left top no-repeat;
         background-size: contain;
-        width: 30px;
-        height: 30px;
+        width: 22.6px;
+        height: 22.6px;
         margin-top: 1.5rem;
         margin-right: 1.5rem;
         background-color: transparent;
@@ -78,10 +90,6 @@
 }
 
 @media screen and (max-width: 320px) {
-    .navbar-ul {
-        font-size: 0.5rem;
-    }
-
     .hamburger {
         height: 15px;
         width: 15px;

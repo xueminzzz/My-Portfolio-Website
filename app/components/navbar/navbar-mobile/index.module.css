@@ -16,7 +16,7 @@
     .navbar-ul {
         display: flex;
         flex-direction: column;
-        font-size: 1.3rem;
+        font-size: 1.13rem;
         list-style: none;
         margin-top: 1.5rem;
         padding: 0;
@@ -44,6 +44,6 @@
     }
 
     .navbar-ul {
-        font-size: 0.8rem;
+        font-size: 0.749rem;
     }
 }
