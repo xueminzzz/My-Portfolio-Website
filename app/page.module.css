@@ -9,7 +9,7 @@
 .projects-header {
   display: flex;
   justify-content: center;
-  font-size: 6rem;
+  font-size: 6.25rem;
   font-weight: bold;
 }
 
@@ -60,42 +60,7 @@
   --color: #2B5ADC;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* 2rem = 20px as my html is set to 10px */
-
-.navbar-ul {
-  display: flex;
-  list-style: none;
-  font-size: 2rem;
-}
-
-/* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
-
-.nav-item-home {
-  margin-right: 1.5em;
-  color: #F85F36;
-  font-weight: bold;
-}
-
-.nav-item-projects {
-  margin-right: 1.5em;
-}
-
-.nav-item-resume {
-  margin-right: 1.5em;
-}
-
-.nav-item:hover {
-  color: #F85F36;
-  font-weight: bold;
-}
-
 .projects-link {
-  text-decoration: none;
   color: black;
 }
 
@@ -106,7 +71,7 @@
   }
 
   .projects-header {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   .image-border {
@@ -114,13 +79,37 @@
     width: 500px;
     height: 500px;
   }
+}
 
-  .navbar-ul {
-    font-size: 1.5rem;
+@media screen and (max-width: 1024px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-header {
+    font-size: 4.38rem;
+  }
+
+  .image-border {
+    margin-top: 2rem;
+    width: 500px;
+    height: 500px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .projects-header {
+    font-size: 3.75rem;
+  }
+
+  .image-border {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 630px) {
   .projects-header {
     font-size: 2.5rem;
   }
@@ -128,10 +117,6 @@
   .image-border {
     width: 400px;
     height: 400px;
-  }
-
-  .navbar-ul {
-    font-size: 1rem;
   }
 }
 
@@ -156,7 +141,6 @@
   }
 
   @keyframes bounce {
-
     0%,
     20%,
     50%,
@@ -175,7 +159,7 @@
   }
 
   .projects-header {
-    font-size: 2rem;
+    font-size: 1.88rem;
   }
 
   .image-border {
@@ -186,7 +170,7 @@
 
 @media screen and (max-width: 320px) {
   .projects-header {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .image-border {

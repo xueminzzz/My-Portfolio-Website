@@ -8,7 +8,7 @@
 
 .project-title {
     margin-top: 3rem;
-    font-size: 3rem;
+    font-size: 3.74rem;
     font-weight: bold;
     display: flex;
     align-self: flex-start;
@@ -16,49 +16,69 @@
 
 .project-description {
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.49rem;
     display: flex;
     align-self: flex-start;
 }
 
 @media screen and (max-width: 1536px) {
     .project-title {
-        font-size: 2.5rem;
+        font-size: 2.99rem;
     }
 
     .project-description {
         margin-top: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .project-title {
+        font-size: 2.62rem;
+    }
+
+    .project-description {
+        font-size: 1.75rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .project-title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .project-description {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .project-title {
-        font-size: 1.5rem;
+        font-size: 1.13rem;
     }
 
     .project-description {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 0.753rem;
     }
 }
 
 @media screen and (max-width: 320px) {
     .project-title {
-        font-size: 1.3rem;
+        font-size: 0.749rem;
     }
 
     .project-description {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 }
