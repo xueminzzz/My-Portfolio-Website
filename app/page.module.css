@@ -75,9 +75,8 @@
   }
 
   .image-border {
-    margin-top: 2rem;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -92,9 +91,8 @@
   }
 
   .image-border {
-    margin-top: 2rem;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -104,8 +102,8 @@
   }
 
   .image-border {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -115,8 +113,8 @@
   }
 
   .image-border {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -163,8 +161,9 @@
   }
 
   .image-border {
-    width: 300px;
-    height: 300px;
+    margin-top: 3rem;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -174,7 +173,7 @@
   }
 
   .image-border {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 }
