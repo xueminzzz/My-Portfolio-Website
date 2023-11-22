@@ -4,6 +4,7 @@ import Header from "./components/header/header";
 import Projects from "./components/projects/projects";
 import Background from "./components/background/background-animation";
 import Navigation from "./components/navbar";
+import Footer from "./components/footer/footer";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -39,6 +40,7 @@ export default function HomePage() {
           />
         </Link>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -1,0 +1,187 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: #3CC157;
+}
+
+.lets-connect {
+    font-size: 6.25rem;
+}
+
+.social-media-icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-top: 5rem;
+}
+
+.mail {
+    background: url(/mail.svg) left top no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+.linkedin {
+    background: url(/linkedin.svg) left top no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+.github {
+    background: url(/github.svg) left top no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 1536px) {
+    .lets-connect {
+        font-size: 5rem;
+    }
+
+    .social-media-icon {
+        margin-top: 4rem;
+    }
+
+    .mail {
+        height: 59.8px;
+        width: 59.8px;
+    }
+
+    .linkedin {
+        height: 59.8px;
+        width: 59.8px;
+    }
+
+    .github {
+        height: 59.8px;
+        width: 59.8px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lets-connect {
+        font-size: 4.38rem;
+    }
+
+    .mail {
+        height: 52.4px;
+        width: 52.4px;
+    }
+
+    .linkedin {
+        height: 52.4px;
+        width: 52.4px;
+    }
+
+    .github {
+        height: 52.4px;
+        width: 52.4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lets-connect {
+        font-size: 3.75rem;
+    }
+
+    .social-media-icon {
+        margin-top: 3rem;
+    }
+
+    .mail {
+        height: 45px;
+        width: 45px;
+    }
+
+    .linkedin {
+        height: 45px;
+        width: 45px;
+    }
+
+    .github {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .lets-connect {
+        font-size: 2.5rem;
+    }
+
+    .mail {
+        height: 30px;
+        width: 30px;
+    }
+
+    .linkedin {
+        height: 30px;
+        width: 30px;
+    }
+
+    .github {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        margin-top: 3rem;
+    }
+
+    .lets-connect {
+        font-size: 1.88rem;
+    }
+
+    .social-media-icon {
+        margin-top: 2rem;
+    }
+
+    .mail {
+        height: 22.6px;
+        width: 22.6px;
+    }
+
+    .linkedin {
+        height: 22.6px;
+        width: 22.6px;
+    }
+
+    .github {
+        height: 22.6px;
+        width: 22.6px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lets-connect {
+        font-size: 1.25rem;
+    }
+
+    .mail {
+        height: 15px;
+        width: 15px;
+    }
+
+    .linkedin {
+        height: 15px;
+        width: 15px;
+    }
+
+    .github {
+        height: 15px;
+        width: 15px;
+    }
+}

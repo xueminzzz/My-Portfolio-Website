@@ -4,7 +4,7 @@ import Navigation from "@/app/components/navbar";
 export default function IS() {
     return (
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
         </div>
     )
 }

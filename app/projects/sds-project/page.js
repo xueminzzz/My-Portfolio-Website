@@ -4,7 +4,6 @@ import Navigation from "@/app/components/navbar";
 export default function SDS() {
     return (
         <div>
-            <Navigation />
         </div>
     )
 }
