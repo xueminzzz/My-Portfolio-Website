@@ -15,7 +15,7 @@ export default function Background() {
       let ball = document.createElement("div");
       ball.classList.add(styles.ball);
       ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-      ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+      ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
       ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
       ball.style.transform = `scale(${Math.random()})`;
       ball.style.width = `${Math.random()}em`;
