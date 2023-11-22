@@ -63,7 +63,7 @@
     .hamburger {
         display: flex;
         position: absolute;
-        top: 0; 
+        top: 0;
         background: url(/hamburger-icon.svg) left top no-repeat;
         background-size: contain;
         width: 22.6px;
@@ -77,8 +77,8 @@
     .close-button {
         display: flex;
         position: absolute;
-        top: 0; 
-        background: url(/close-button-black.svg) left top no-repeat;
+        top: 0;
+        background: url(/close-button-dark.svg) left top no-repeat;
         background-size: contain;
         width: 22.6px;
         height: 22.6px;
