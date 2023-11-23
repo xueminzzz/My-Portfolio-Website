@@ -172,6 +172,10 @@
         font-size: 1.25rem;
     }
 
+    .social-media-icon {
+        margin-top: 1rem;
+    }
+
     .mail {
         height: 15px;
         width: 15px;

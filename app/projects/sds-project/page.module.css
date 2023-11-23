@@ -1,0 +1,84 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-header {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    margin-top: 5rem;
+    font-size: 6.25rem;
+}
+
+.collaborators {
+    margin-top: 2rem;
+    font-size: 3.74rem;
+}
+
+@media screen and (max-width: 1536px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .collaborators {
+        font-size: 2.99rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 4.38rem;
+    }
+
+    .collaborators {
+        font-size: 2.62rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3.75rem;
+    }
+
+    .collaborators {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .collaborators {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.88rem;
+        margin-top: 3rem;
+    }
+
+    .collaborators {
+        font-size: 1.13rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .collaborators {
+        font-size: 0.749rem;
+    }
+}
