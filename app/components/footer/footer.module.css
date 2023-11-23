@@ -14,7 +14,7 @@
 .social-media-icon {
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
+    width: 20%;
     margin-top: 5rem;
 }
 
@@ -52,6 +52,7 @@
 
     .social-media-icon {
         margin-top: 4rem;
+        width: 30%;
     }
 
     .mail {
