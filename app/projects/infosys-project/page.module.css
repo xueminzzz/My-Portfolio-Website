@@ -6,12 +6,15 @@
 
 .project-header {
     width: 100%;
-    height: 20%;
-    
+    height: auto;
 }
 
 .title-and-description {
-    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
 }
 
 .title {
@@ -28,7 +31,7 @@
 .description-container {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 50%;
     margin-top: 2rem;
     font-size: 2.49rem;
     text-align: center;
@@ -37,7 +40,6 @@
 .sub-description-container {
     display: flex;
     flex-direction: column;
-    width: 169.2px;
 }
 
 .sub-description-details {
@@ -54,10 +56,6 @@
         margin-top: 1.5rem;
     }
 
-    .sub-description-container {
-        width: 135.9px;
-    }
-
     .description-container {
         font-size: 2rem;
     }
@@ -72,8 +70,8 @@
         font-size: 1.46rem;
     }
 
-    .sub-description-container {
-        width: 118.9px;
+    .description-container {
+        width: 90%;
     }
 
     .description-container {
@@ -90,12 +88,9 @@
         font-size: 1.25rem;
     }
 
-    .sub-description-container {
-        width: 101.9px;
-    }
-
     .description-container {
         font-size: 1.5rem;
+        width: 70%;
     }
 }
 
@@ -106,10 +101,6 @@
 
     .collaborators {
         font-size: 0.833rem;
-    }
-
-    .sub-description-container {
-        width: 68px;
     }
 
     .description-container {
@@ -131,7 +122,6 @@
     }
 
     .title-and-description {
-        padding: 1rem;
         margin-top: 3rem;
     }
 
@@ -140,8 +130,8 @@
         margin-top: 1rem;
     }
 
-    .sub-description-container {
-        width: 76.8px;
+    .description-container {
+        width: 100%;
     }
 
     .description-container {
@@ -156,10 +146,6 @@
 
     .collaborators {
         font-size: 0.624rem;
-    }
-
-    .sub-description-container {
-        width: 50.9px;
     }
 
     .description-container {
