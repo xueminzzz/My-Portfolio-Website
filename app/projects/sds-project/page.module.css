@@ -62,7 +62,7 @@
 .summary {
     margin-top: 2rem;
     text-align: justify;
-    line-height: 4rem;
+    line-height: 3rem;
     font-size: 2.49rem;
 }
 
@@ -86,7 +86,6 @@
 
     .summary {
         font-size: 2rem;
-        line-height: 3rem;
     }
 }
 
