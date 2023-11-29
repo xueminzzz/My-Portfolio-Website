@@ -1,0 +1,154 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-header {
+    width: 100%;
+    height: auto;
+}
+
+.title-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.title {
+    font-size: 4.16rem;
+    text-align: center;
+}
+
+.collaborators {
+    margin-top: 2rem;
+    font-size: 2.08rem;
+    text-align: center;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 2rem;
+    font-size: 2.49rem;
+    text-align: center;
+}
+
+.sub-description-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-description-details {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1536px) {
+    .title {
+        font-size: 3.34rem;
+    }
+
+    .collaborators {
+        font-size: 1.67rem;
+        margin-top: 1.5rem;
+    }
+
+    .description-container {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.92rem;
+    }
+
+    .collaborators {
+        font-size: 1.46rem;
+    }
+
+    .description-container {
+        width: 90%;
+    }
+
+    .description-container {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.51rem;
+    }
+
+    .collaborators {
+        font-size: 1.25rem;
+    }
+
+    .description-container {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .title {
+        font-size: 1.67rem;
+    }
+
+    .collaborators {
+        font-size: 0.833rem;
+    }
+
+    .description-container {
+        font-size: 1rem;
+    }
+
+    .sub-description-details {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-header {
+        margin-top: 5rem;
+    }
+
+    .title {
+        font-size: 1.88rem;
+    }
+
+    .title-and-description {
+        margin-top: 3rem;
+    }
+
+    .collaborators {
+        font-size: 0.942rem;
+        margin-top: 1rem;
+    }
+
+    .description-container {
+        width: 100%;
+    }
+
+    .description-container {
+        font-size: 1.13rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .collaborators {
+        font-size: 0.624rem;
+    }
+
+    .description-container {
+        font-size: 0.749rem;
+    }
+}

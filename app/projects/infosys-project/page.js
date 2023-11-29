@@ -20,7 +20,7 @@ export default function IS() {
                     </div>
                     <div className={styles["sub-description-container"]}>
                         <div className={styles["sub-description"]}>Tools used:</div>
-                        <div className={styles["sub-description-details"]}>Andriod Studios</div>
+                        <div className={styles["sub-description-details"]}>Andriod Studios, Java</div>
                     </div>
                 </div>
             </div>
