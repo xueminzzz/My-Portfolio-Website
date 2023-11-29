@@ -7,69 +7,146 @@
 .project-header {
     width: 100%;
     height: auto;
+    
+}
+
+.title-and-description {
+    background-color: gainsboro;
+    width: 100%;
+    padding: 1.2rem;
 }
 
 .title {
-    margin-top: 5rem;
-    font-size: 6.25rem;
+    font-size: 4.16rem;
+    text-align: center;
 }
 
 .collaborators {
     margin-top: 2rem;
-    font-size: 3.74rem;
+    font-size: 2.08rem;
+    text-align: center;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 2.49rem;
+    text-align: center;
+}
+
+.sub-description-container {
+    display: flex;
+    flex-direction: column;
+    width: 218px;
+}
+
+.sub-description-details {
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 1536px) {
     .title {
-        font-size: 5rem;
+        font-size: 3.34rem;
     }
 
     .collaborators {
-        font-size: 2.99rem;
+        font-size: 1.67rem;
         margin-top: 1.5rem;
+    }
+
+    .sub-description-container {
+        width: 175.2px;
+    }
+
+    .description-container {
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .title {
-        font-size: 4.38rem;
+        font-size: 2.92rem;
     }
 
     .collaborators {
-        font-size: 2.62rem;
+        font-size: 1.46rem;
+    }
+
+    .sub-description-container {
+        width: 153.3px;
+    }
+
+    .description-container {
+        font-size: 1.75rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .title {
-        font-size: 3.75rem;
+        font-size: 2.51rem;
     }
 
     .collaborators {
-        font-size: 2.25rem;
+        font-size: 1.25rem;
     }
 
-}
-
-@media screen and (max-width: 630px) {
-    .title {
-        font-size: 2.5rem;
+    .sub-description-container {
+        width: 132px;
     }
 
-    .collaborators {
+    .description-container {
         font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 630px) {
     .title {
-        font-size: 1.88rem;
-        margin-top: 3rem;
+        font-size: 1.67rem;
     }
 
     .collaborators {
-        font-size: 1.13rem;
+        font-size: 0.833rem;
+    }
+
+    .sub-description-container {
+        width: 87.6px;
+    }
+
+    .description-container {
+        font-size: 1rem;
+    }
+
+    .sub-description-details {
         margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-header {
+        margin-top: 1.89rem;
+    }
+
+    .title {
+        font-size: 1.88rem;
+    }
+
+    .title-and-description {
+        padding: 1rem;
+    }
+
+    .collaborators {
+        font-size: 0.942rem;
+        margin-top: 1rem;
+    }
+
+    .sub-description-container {
+        width: 99px;
+    }
+
+    .description-container {
+        font-size: 1.13rem;
     }
 }
 
@@ -79,6 +156,14 @@
     }
 
     .collaborators {
+        font-size: 0.624rem;
+    }
+
+    .sub-description-container {
+        width: 65.6px;
+    }
+
+    .description-container {
         font-size: 0.749rem;
     }
 }
