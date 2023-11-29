@@ -46,6 +46,25 @@
     margin-top: 2rem;
 }
 
+.project-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 50%;
+}
+
+.project {
+    font-size: 4.16rem;
+}
+
+.summary {
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+    font-size: 2.49rem;
+}
+
 @media screen and (max-width: 1536px) {
     .title {
         font-size: 3.34rem;
@@ -57,6 +76,14 @@
     }
 
     .description-container {
+        font-size: 2rem;
+    }
+
+    .project {
+        font-size: 3.34rem;
+    }
+
+    .summary {
         font-size: 2rem;
     }
 }
@@ -77,6 +104,18 @@
     .description-container {
         font-size: 1.75rem;
     }
+
+    .project-summary {
+        width: 60%;
+    }
+
+    .project {
+        font-size: 2.92rem;
+    }
+
+    .summary {
+        font-size: 1.75rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +130,18 @@
     .description-container {
         font-size: 1.5rem;
         width: 70%;
+    }
+
+    .project-summary {
+        width: 70%;
+    }
+
+    .project {
+        font-size: 2.51rem;
+    }
+
+    .summary {
+        font-size: 1.5rem;
     }
 }
 
@@ -109,6 +160,14 @@
 
     .sub-description-details {
         margin-top: 1rem;
+    }
+
+    .project {
+        font-size: 1.67rem;
+    }
+
+    .summary {
+        font-size: 1rem;
     }
 }
 
@@ -137,6 +196,20 @@
     .description-container {
         font-size: 1.13rem;
     }
+
+    .project-summary {
+        margin-top: 3rem;
+    }
+
+    .project {
+        font-size: 1.88rem;
+    }
+
+    .summary {
+        font-size: 1.13rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -150,5 +223,14 @@
 
     .description-container {
         font-size: 0.749rem;
+    }
+
+    .project {
+        font-size: 1.25rem;
+    }
+
+    .summary {
+        font-size: 0.749rem;
+        line-height: 1.5rem;
     }
 }

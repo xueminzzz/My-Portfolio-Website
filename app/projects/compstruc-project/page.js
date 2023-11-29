@@ -24,6 +24,15 @@ export default function CS() {
                     </div>
                 </div>
             </div>
+            <div className={styles["project-summary"]}>
+                <div className={styles["project"]}>The Project</div>
+                <div className={styles["summary"]}>
+                    Many digitally vulnerable CPF members have to navigate through the complicated CPF application in order
+                    to complete transactional and informational services offered online. The project focuses on improving
+                    the user experience of the existing CPF app such that CPF members especially from the digitally vulnerable
+                    groups can effectively embark on self-help.
+                </div>
+            </div>
         </div>
     )
 }

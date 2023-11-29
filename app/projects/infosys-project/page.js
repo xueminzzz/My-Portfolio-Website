@@ -24,6 +24,15 @@ export default function IS() {
                     </div>
                 </div>
             </div>
+            <div className={styles["project-summary"]}>
+                <div className={styles["project"]}>The Project</div>
+                <div className={styles["summary"]}>
+                    SUTD students and staff often find themselves queuing up for long periods of time
+                    at the canteen, especially during peak hours. With limited time on their hands,
+                    some may even choose to forgo meals, which is not conducive to their health and productivity.
+                    Our mobile application aims to reduce the time spent queueing by pre-ordering meals.
+                </div>
+            </div>
         </div>
     )
 }
