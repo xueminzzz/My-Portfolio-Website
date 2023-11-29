@@ -30,7 +30,7 @@ export default function IS() {
                     SUTD students and staff often find themselves queuing up for long periods of time
                     at the canteen, especially during peak hours. With limited time on their hands,
                     some may even choose to forgo meals, which is not conducive to their health and productivity.
-                    Our mobile application aims to reduce the time spent queueing by pre-ordering meals.
+                    Our mobile application aims to reduce the time spent queueing through pre-ordering meals.
                 </div>
             </div>
         </div>
