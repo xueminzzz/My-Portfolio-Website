@@ -31,14 +31,14 @@ export default function HomePage() {
             className={`${styles["image-border"]} ${styles["project2-border"]}`}
           />
         </Link>
-        <Link href="/projects/compstruc-project" className={styles["projects-link"]}>
+        {/* <Link href="/projects/compstruc-project" className={styles["projects-link"]}>
           <Projects
             image="/compstruc-project-placeholder.svg"
             title="NHOMP"
             description="Alchitry IO Logic Game"
             className={`${styles["image-border"]} ${styles["project3-border"]}`}
           />
-        </Link>
+        </Link> */}
       </div>
       <Footer />
     </div>
