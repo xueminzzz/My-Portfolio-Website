@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SDS() {
     return (
-        <div className={styles["body-container"]}>
+        <div className={styles["main-container"]}>
             <Image
                 src={"/sds-project-header.svg"} priority={true}
                 width={0}
