@@ -1,4 +1,5 @@
 import YouTube from 'react-youtube';
+import styles from "./youtube.module.css";
 
 const YouTubePlayer = ({ videoId }) => {
     // Set up event handlers
@@ -15,11 +16,14 @@ const YouTubePlayer = ({ videoId }) => {
     };
 
     return (
-        <YouTube
-            videoId={videoId}
-            onReady={onReady}
-            onError={onError}
-        />
+        <div className={styles["youtube-video-container"]}>
+            <YouTube
+                videoId={videoId}
+                onReady={onReady}
+                onError={onError}
+                className={styles["youtube-video"]}
+            />
+        </div>
     );
 };
 

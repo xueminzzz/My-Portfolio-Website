@@ -1,0 +1,9 @@
+.youtube-video {
+  width: 300px;
+}
+
+.youtube-video-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}

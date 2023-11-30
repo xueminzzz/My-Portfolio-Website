@@ -74,6 +74,11 @@
     font-size: 2.49rem;
 }
 
+.youtube-video {
+    height: auto;
+    width: 50%; 
+}
+
 @media screen and (max-width: 1536px) {
     .title {
         font-size: 3.34rem;
@@ -178,6 +183,11 @@
 
     .summary {
         font-size: 1rem;
+    }
+
+    .youtube-video {
+        height: auto;
+        width: 50%; 
     }
 }
 
