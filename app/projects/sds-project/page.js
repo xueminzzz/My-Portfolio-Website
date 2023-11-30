@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Navigation from "@/app/components/navbar";
 import Image from "next/image";
 
 export default function SDS() {
@@ -28,9 +27,9 @@ export default function SDS() {
             <div className={styles["project-summary"]}>
                 <div className={styles["project"]}>The Project</div>
                 <div className={styles["summary"]}>
-                    Many digitally vulnerable CPF members have to navigate through the complicated CPF application in order 
+                    Many digitally vulnerable CPF members have to navigate through the complicated CPF application in order
                     to complete transactional and informational services offered online. The project focuses on improving
-                    the user experience of the existing CPF app such that CPF members especially from the digitally vulnerable 
+                    the user experience of the existing CPF app such that CPF members especially from the digitally vulnerable
                     groups can effectively embark on self-help.
                 </div>
             </div>
