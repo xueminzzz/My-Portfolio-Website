@@ -1,6 +1,7 @@
-import Footer from "@/app/components/footer/footer";
+"use client"
 import styles from "./page.module.css";
 import Image from "next/image";
+import YouTubePlayer from '@/app/components/youtube/youtube';
 
 export default function SDS() {
     return (
@@ -34,6 +35,12 @@ export default function SDS() {
                     groups can effectively embark on self-help.
                 </div>
             </div>
-        </div>
+            <div className={styles["project-summary"]}>
+                <div className={styles["project"]}>The Product</div>
+                <div className={styles["summary"]}>
+                    <YouTubePlayer videoId="Xj8-tfrNFxQ" />
+                </div>
+            </div>
+        </div >
     )
 }
