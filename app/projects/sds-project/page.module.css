@@ -1,14 +1,14 @@
-.layout-container {
+.body-and-footer-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.main-container {
+.body-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    height: auto;
 }
 
 .project-header {

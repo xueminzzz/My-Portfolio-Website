@@ -6,10 +6,10 @@ import styles from "./page.module.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={styles["layout-container"]}>
+      <body>
         <Navigation />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )
