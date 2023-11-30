@@ -13,25 +13,26 @@ export default function HomePage() {
       <Background />
       <Navigation />
       <Header />
-      <div className={styles["projects-header"]} id="projects">Projects</div>
-      <div className={styles["projects"]}>
-        <Link href="/projects/sds-project" className={styles["projects-link"]}>
-          <Projects
-            image="/sds-project-placeholder.svg"
-            title="Service Design Studio x CPF"
-            description="Redesigning CPF Mobile Application"
-            className={`${styles["image-border"]} ${styles["project1-border"]}`}
-          />
-        </Link>
-        <Link href="/projects/infosys-project" className={styles["projects-link"]}>
-          <Projects
-            image="/infosys-project-placeholder.svg"
-            title="Grab & Go"
-            description="Android Studios Mobile Application"
-            className={`${styles["image-border"]} ${styles["project2-border"]}`}
-          />
-        </Link>
-        {/* <Link href="/projects/compstruc-project" className={styles["projects-link"]}>
+      <div className={styles["projects-and-footer-container"]}>
+        <div className={styles["projects-header"]} id="projects">Projects</div>
+        <div className={styles["projects"]}>
+          <Link href="/projects/sds-project" className={styles["projects-link"]}>
+            <Projects
+              image="/sds-project-placeholder.svg"
+              title="Service Design Studio x CPF"
+              description="Redesigning CPF Mobile Application"
+              className={`${styles["image-border"]} ${styles["project1-border"]}`}
+            />
+          </Link>
+          <Link href="/projects/infosys-project" className={styles["projects-link"]}>
+            <Projects
+              image="/infosys-project-placeholder.svg"
+              title="Grab & Go"
+              description="Android Studios Mobile Application"
+              className={`${styles["image-border"]} ${styles["project2-border"]}`}
+            />
+          </Link>
+          {/* <Link href="/projects/compstruc-project" className={styles["projects-link"]}>
           <Projects
             image="/compstruc-project-placeholder.svg"
             title="NHOMP"
@@ -39,8 +40,9 @@ export default function HomePage() {
             className={`${styles["image-border"]} ${styles["project3-border"]}`}
           />
         </Link> */}
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }

@@ -1,3 +1,10 @@
+.body-and-footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
