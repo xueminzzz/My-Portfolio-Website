@@ -42,12 +42,10 @@
     display: flex;
     align-items: center;
     margin-top: -7.48rem;
-    height: 7.48rem;
     width: fit-content;
 }
 
 .about-me-button {
-    height: 74.8px;
     font-size: 3.74rem;
     padding: 1.99rem;
     border: none;
@@ -96,12 +94,10 @@
     }
 
     .about-me-container {
-        height: 5.98rem;
         margin-top: -5.98rem;
     }
 
     .about-me-button {
-        height: 5.98rem;
         font-size: 2.99rem;
         padding: 1.59rem;
     }
@@ -133,12 +129,10 @@
     }
 
     .about-me-container {
-        height: 5.24rem;
         margin-top: -5.24rem;
     }
 
     .about-me-button {
-        height: 5.24rem;
         font-size: 2.62rem;
         padding: 1.4rem;
     }
@@ -168,12 +162,7 @@
         font-size: 2.25rem;
     }
 
-    .about-me-container {
-        height: 4.5rem;
-    }
-
     .about-me-button {
-        height: 4.5rem;
         font-size: 2.25rem;
         padding: 1.2rem;
     }
@@ -205,12 +194,10 @@
     }
 
     .about-me-container {
-        height: 3rem;
         margin-top: -3rem;
     }
 
     .about-me-button {
-        height: 3rem;
         font-size: 1.5rem;
         padding: 0.8rem;
     }
@@ -252,11 +239,9 @@
 
     .about-me-container {
         margin-top: -2.26rem;
-        height: 2.26rem;
     }
 
     .about-me-button {
-        height: 2.26rem;
         font-size: 1.13rem;
         padding: 0.603rem;
     }
@@ -333,13 +318,10 @@
 
     .about-me-container {
         margin-top: -1.5rem;
-        height: 1.5rem;
     }
 
     .about-me-button {
-        height: 1.5rem;
         font-size: 0.749rem;
-        align-self: center;
         padding: 0.4rem;
     }
 

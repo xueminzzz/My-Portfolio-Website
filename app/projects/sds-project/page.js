@@ -39,6 +39,10 @@ export default function SDS() {
                 <div className={styles["project"]}>The Product</div>
                 <Player />
             </div>
+            <div className={styles["website-container"]}>
+                <button className={styles["website-button"]}>Website</button>
+                <button className={styles["right-arrow"]}></button>
+            </div>
         </div >
     )
 }
