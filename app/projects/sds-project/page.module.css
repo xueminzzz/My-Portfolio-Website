@@ -97,6 +97,10 @@
     border: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1536px) {
     .title {
         font-size: 3.34rem;

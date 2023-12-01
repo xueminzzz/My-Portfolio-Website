@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import Player from "@/app/components/youtube/youtube";
+import Link from "next/link";
 
 export default function SDS() {
     return (
@@ -39,10 +40,12 @@ export default function SDS() {
                 <div className={styles["project"]}>The Product</div>
                 <Player />
             </div>
-            <div className={styles["website-container"]}>
-                <button className={styles["website-button"]}>Website</button>
-                <button className={styles["right-arrow"]}></button>
-            </div>
+            <Link href="https://sites.google.com/mymail.sutd.edu.sg/creaitivestudios/home" className={styles["link"]} target="blank">
+                <div className={styles["website-container"]}>
+                    <button className={styles["website-button"]}>Website</button>
+                    <button className={styles["right-arrow"]}></button>
+                </div>
+            </Link>
         </div >
     )
 }
