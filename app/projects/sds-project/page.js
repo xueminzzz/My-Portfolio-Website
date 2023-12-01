@@ -1,9 +1,7 @@
 "use client"
 import styles from "./page.module.css";
 import Image from "next/image";
-// import YouTubePlayer from "@/app/components/youtube/youtube";
-import { CldVideoPlayer } from 'next-cloudinary';
-import 'next-cloudinary/dist/cld-video-player.css';
+import Player from "@/app/components/youtube/youtube";
 
 export default function SDS() {
     return (
@@ -39,14 +37,8 @@ export default function SDS() {
             </div>
             <div className={styles["project-summary"]}>
                 <div className={styles["project"]}>The Product</div>
-                {/* <CldVideoPlayer
-                    id="sea-turtle"
-                    width="1920"
-                    height="1080"
-                    src="/sds-project-header.svg"
-                /> */}
+                <Player />
             </div>
-            {/* <YouTubePlayer videoId="Xj8-tfrNFxQ" /> */}
         </div >
     )
 }
