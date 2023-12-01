@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Video, CloudinaryContext} from "cloudinary-react";
+import { Video, CloudinaryContext, Transformation } from "cloudinary-react";
 import styles from "./youtube.module.css";
 
 const VideoPlayer = () => {
@@ -7,11 +7,6 @@ const VideoPlayer = () => {
     // Cloudinary configuration
     const cloudinaryCloudName = "ddc6slavq"; // Replace with your Cloudinary cloud name
     const publicId = "SDS_Team_9_CREAITIVESTUDIOS_easyCPF_Final_Product_Video_porvu8"; // Replace with the Cloudinary public ID of your video
-    const posterOptions = {
-        transformation: {
-            startOffset: 116
-        }
-    };
 
     return (
         <CloudinaryContext cloudName={cloudinaryCloudName}>
@@ -22,7 +17,6 @@ const VideoPlayer = () => {
                     controls
                     innerRef={videoRef}
                     className={styles["video"]}
-                    posterOptions={posterOptions}          
                 >
                 </Video>
             </div>
