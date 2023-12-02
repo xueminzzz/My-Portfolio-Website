@@ -23,6 +23,7 @@
     padding: 7rem;
     height: auto;
     width: 100%;
+
 }
 
 .container-light {
@@ -36,18 +37,18 @@
 }
 
 .title {
-    font-size: 4.16rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .description {
     margin-top: -2rem;
-    font-size: 2.08rem;
+    font-size: 2rem;
 }
 
 .about-me-content {
     text-align: justify;
-    font-size: 2.49rem;
+    font-size: 2.5rem;
     line-height: 1.5;
 }
 
@@ -91,8 +92,9 @@
     outline: none;
     transition: border-color 0.3s ease;
     color: #ffffff;
-    font-size: 2.49rem;
+    font-size: 3rem;
     font-family: 'futura';
+    /* zoom: 1; */
 }
 
 .line-input:hover {
@@ -100,7 +102,7 @@
 }
 
 .form {
-    font-size: 2.49rem;
+    font-size: 3rem;
 }
 
 .submit-container {
@@ -111,7 +113,7 @@
 .submit-button {
     width: fit-content;
     margin-top: 2em;
-    font-size: 2.49rem;
+    font-size: 2.5rem;
     padding: 0.8em;
     border: none;
     background: #ffffff;
@@ -121,7 +123,7 @@
 }
 
 .success-message {
-    font-size: 2.49rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
     align-self: center;
 }
@@ -132,75 +134,42 @@
     }
 
     .title {
-        font-size: 3.34rem;
+        font-size: 3rem;
     }
 
     .description {
-        font-size: 1.67rem;
+        font-size: 1.2rem;
     }
 
     .about-me-content {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .close-button-light {
-        height: 59.8px;
-        width: 59.8px;
+        height: 40px;
+        width: 40px;
     }
 
     .line-input {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .form {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .submit-button {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .success-message {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .parent-container {
         width: 85%;
-    }
-
-    .title {
-        font-size: 2.92rem;
-    }
-
-    .description {
-        font-size: 1.46rem;
-    }
-
-    .about-me-content {
-        font-size: 1.75rem;
-    }
-
-    .close-button-light {
-        height: 52.4px;
-        width: 52.4px;
-    }
-
-    .line-input {
-        font-size: 1.75rem;
-    }
-
-    .form {
-        font-size: 1.75rem;
-    }
-
-    .submit-button {
-        font-size: 1.75rem;
-    }
-
-    .success-message {
-        font-size: 1.75rem;
     }
 }
 
@@ -238,78 +207,7 @@
         background-color: transparent;
         border: none;
     }
-
-    .title {
-        font-size: 2.51rem;
-    }
-
-    .description {
-        font-size: 1.25rem;
-    }
-
-    .about-me-content {
-        font-size: 1.5rem;
-    }
-
-    .close-button-light {
-        height: 45px;
-        width: 45px;
-    }
-
-    .line-input {
-        font-size: 1.5rem;
-    }
-
-    .form {
-        font-size: 1.5rem;
-    }
-
-    .submit-button {
-        font-size: 1.5rem;
-    }
-
-    .success-message {
-        font-size: 1.5rem;
-    }
 }
-
-@media screen and (max-width: 630px) {
-    .title {
-        font-size: 1.67rem;
-    }
-
-    .description {
-        font-size: 0.833rem;
-        margin-top: -1rem;
-    }
-
-    .about-me-content {
-        font-size: 1rem;
-    }
-
-    .close-button-light {
-        height: 30px;
-        width: 30px;
-    }
-
-    .line-input {
-        font-size: 1rem;
-    }
-
-    .form {
-        font-size: 1rem;
-    }
-
-    .submit-button {
-        font-size: 1rem;
-    }
-
-    .success-message {
-        font-size: 1rem;
-    }
-}
-
-
 
 @media screen and (max-width: 480px) {
     .main-container {
@@ -318,75 +216,5 @@
 
     .child-container {
         padding: 3rem;
-    }
-
-    .title {
-        font-size: 1.88rem;
-    }
-
-    .description {
-        font-size: 0.942rem;
-
-    }
-
-    .about-me-content {
-        font-size: 1.13rem;
-        line-height: 2;
-    }
-
-    .close-button-light {
-        height: 22.6px;
-        width: 22.6px;
-    }
-
-    .line-input {
-        font-size: 1.13rem;
-    }
-
-    .form {
-        font-size: 1.13rem;
-    }
-
-    .submit-button {
-        font-size: 1.13rem;
-    }
-
-    .success-message {
-        font-size: 1.13rem;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .title {
-        font-size: 1.25rem;
-    }
-
-    .description {
-        font-size: 0.624rem;
-    }
-
-    .about-me-content {
-        font-size: 0.749rem;
-    }
-
-    .close-button-light {
-        height: 15px;
-        width: 15px;
-    }
-
-    .line-input {
-        font-size: 0.749rem;
-    }
-
-    .form {
-        font-size: 0.749rem;
-    }
-
-    .submit-button {
-        font-size: 0.749rem;
-    }
-
-    .success-message {
-        font-size: 0.749rem;
     }
 }
