@@ -47,8 +47,6 @@ export default function AboutMe() {
     return (
         <div className={styles["main-container"]}>
             <div className={styles["parent-container"]}>
-
-
                 <div className={`${styles["child-container"]} ${styles["container-light"]}`}>
                     <div className={styles["container-light-top"]}>
                         <p className={styles["title"]}>About me.</p>
