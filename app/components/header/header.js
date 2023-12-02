@@ -17,7 +17,7 @@ export default function Header() {
                 <div className={styles["information"]}>
                     <div className={styles["me"]}>Ng Xue Min</div>
                     <div className={styles["title"]}>Aspiring Software Developer</div>
-                    <Link href="about-me" className={styles["link"]}>
+                    <Link href="/about-me" className={styles["link"]}>
                         <div className={styles["about-me-container"]}>
                             <button className={styles["about-me-button"]}>About Me</button>
                             <button className={styles["right-arrow"]}></button>
