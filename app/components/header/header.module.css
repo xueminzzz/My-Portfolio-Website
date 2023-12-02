@@ -331,6 +331,10 @@
         width: 15px;
     }
 
+    .scroll-container {
+        margin-top: 1.5rem;
+    }
+
     .scroll {
         color: #000000;
         font-size: 0.749rem;
