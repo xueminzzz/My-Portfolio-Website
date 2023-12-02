@@ -210,11 +210,11 @@
 
 @media screen and (max-width: 480px) {
     .main-container {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .header-container {
-        align-items: flex-start;
+        margin-top: 12rem;
     }
 
     .avatar {
