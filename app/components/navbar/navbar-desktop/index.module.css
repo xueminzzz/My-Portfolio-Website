@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.navbar {
+    position: fixed;
+    margin-top: 5rem;
+}
+
 .hamburger {
     display: none;
 }
@@ -62,7 +67,7 @@
 
     .hamburger {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         background: url(/hamburger-icon.svg) left top no-repeat;
         background-size: contain;
@@ -76,7 +81,7 @@
 
     .close-button {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         background: url(/close-button-dark.svg) left top no-repeat;
         background-size: contain;

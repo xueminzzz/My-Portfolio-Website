@@ -9,7 +9,7 @@ export default function Navbar({ isOpen, toggle }) {
         <div className={styles["main-container"]} >
             <button onClick={toggle} className={isOpen ? styles["close-button"] : styles["hamburger"]}>
             </button>
-            <nav>
+            <nav className={styles["navbar"]}>
                 <ul className={styles["navbar-ul"]}>
                     <Link href="/" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Home</li>
