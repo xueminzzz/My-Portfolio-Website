@@ -2,10 +2,12 @@
 import Image from "next/image";
 import styles from "./header.module.css";
 import Link from "next/link";
+import Background from "../background/background-animation";
 
 export default function Header() {
     return (
         <div className={styles["main-container"]}>
+            <Background />
             <div className={styles["header-container"]}>
                 <Image
                     src={"/avatar.svg"} priority={true}
