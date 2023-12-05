@@ -5,8 +5,8 @@
 }
 
 .navbar {
-    position: fixed;
-    margin-top: 5rem;
+    /* position: fixed; */
+    /* margin-top: 5rem; */
     width: 100%;
     background-color: white;
 }
