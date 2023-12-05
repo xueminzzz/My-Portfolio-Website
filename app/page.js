@@ -14,9 +14,9 @@ export default function HomePage() {
       <Navigation />
       <Header />
       <div className={styles["projects-and-footer-container"]}>
-        <div className={styles["projects-container"]}>
-          <div className={styles["projects-header"]} id="projects">Projects</div>
-          <div className={styles["projects"]}>
+        <div className={styles["projects-container"]} >
+          {/* <div className={styles["projects-header"]} id="projects">Projects</div> */}
+          <div className={styles["projects"]} id="projects">
             <Link href="/projects/sds-project" className={styles["projects-link"]}>
               <Projects
                 image="/sds-project-placeholder.svg"
