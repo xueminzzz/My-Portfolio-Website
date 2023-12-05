@@ -12,6 +12,7 @@
         height: auto;
         background-color: #3CC157;
         position: fixed;
+        margin-top: 0;
     }
 
     .navbar-ul {
