@@ -172,9 +172,12 @@
     }
   }
 
+  .projects-container {
+    margin-top: 12rem;
+  }
+
   .projects-header {
     font-size: 1.88rem;
-    margin-top: 3rem;
   }
 
   .image-border {
