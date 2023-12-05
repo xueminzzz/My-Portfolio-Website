@@ -214,10 +214,6 @@
         justify-content: flex-start;
     }
 
-    .header-container {
-        margin-top: 12rem;
-    }
-
     .avatar {
         height: 150px;
         width: 150px;
