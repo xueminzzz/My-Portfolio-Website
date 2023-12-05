@@ -7,7 +7,7 @@ import Background from "../background/background-animation";
 export default function Header() {
     return (
         <div className={styles["main-container"]}>
-            <Background />
+            {/* <Background /> */}
             <div className={styles["header-container"]}>
                 <Image
                     src={"/avatar.svg"} priority={true}
