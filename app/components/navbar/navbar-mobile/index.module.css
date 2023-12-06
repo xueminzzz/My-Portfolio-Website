@@ -11,8 +11,8 @@
         width: 100%;
         height: auto;
         background-color: #3CC157;
-        position: absolute;
-        margin-top: 0;
+        position: fixed;
+        top: 0;
     }
 
     .navbar-ul {
