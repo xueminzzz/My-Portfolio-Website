@@ -156,30 +156,11 @@
     .social-media-icon {
         margin-top: 1rem;
     }
-
-    /* .mail {
-        height: 22.6px;
-        width: 22.6px;
-    }
-
-    .linkedin {
-        height: 22.6px;
-        width: 22.6px;
-    }
-
-    .github {
-        height: 22.6px;
-        width: 22.6px;
-    } */
 }
 
 @media screen and (max-width: 320px) {
     .lets-connect {
         font-size: 1.25rem;
-    }
-
-    .social-media-icon {
-        margin-top: 1rem;
     }
 
     .mail {

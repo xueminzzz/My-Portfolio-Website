@@ -5,10 +5,14 @@
 }
 
 .navbar {
-    /* position: fixed; */
-    /* margin-top: 5rem; */
+    display: flex;
     width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
     background-color: white;
+    height: 50px;
 }
 
 .hamburger {
@@ -18,9 +22,9 @@
 /* 2rem = 20px as my html is set to 10px */
 .navbar-ul {
     display: flex;
-    justify-content: flex-end;
     list-style: none;
     font-size: 2.49rem;
+    justify-content: flex-end;
 }
 
 /* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
