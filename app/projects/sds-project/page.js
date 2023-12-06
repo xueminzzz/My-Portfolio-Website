@@ -1,7 +1,7 @@
 "use client"
 import styles from "./page.module.css";
 import Image from "next/image";
-import Player from "@/app/components/youtube/youtube";
+import Player from "@/app/components/video/sds-video";
 import Link from "next/link";
 
 export default function SDS() {

@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { Video, CloudinaryContext, Transformation } from "cloudinary-react";
-import styles from "./youtube.module.css";
+import { Video, CloudinaryContext} from "cloudinary-react";
+import styles from "./sds-video.module.css";
 
 const VideoPlayer = () => {
     const videoRef = useRef();

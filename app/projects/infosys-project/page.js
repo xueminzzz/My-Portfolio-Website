@@ -1,5 +1,7 @@
+"use client"
 import styles from "./page.module.css";
 import Image from "next/image";
+import Player from "@/app/components/video/infosys-video";
 
 export default function IS() {
     return (
@@ -32,6 +34,23 @@ export default function IS() {
                     some may even choose to forgo meals, which is not conducive to their health and productivity.
                     Our mobile application aims to reduce the time spent queueing through pre-ordering meals.
                 </div>
+            </div>
+            <div className={styles["project-summary"]}>
+                <div className={styles["project"]}>The Product</div>
+                <Player />
+            </div>
+            <div className={styles["project-summary"]}>
+                <div className={styles["project"]}>System Design</div>
+                <div className={styles["summary"]}>
+                    The app uses the Model-View-Controller framework. The diagram below summarizes the MVC framework
+                    of our app.
+                </div>
+                <Image 
+                    src={"/infosys-project-system-design.svg"} priority={true}
+                    width={0}
+                    height={0}
+                    className={`${styles["project-header"]} ${styles["system-design"]}`}
+                />
             </div>
         </div>
     )

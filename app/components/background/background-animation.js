@@ -16,7 +16,7 @@ export default function Background() {
       ball.classList.add(styles.ball);
       ball.style.background = colors[Math.floor(Math.random() * colors.length)];
       ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
-      ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+      ball.style.top = `${Math.floor(Math.random() * 90)}vh`;
       ball.style.transform = `scale(${Math.random()})`;
       ball.style.width = `${Math.random()}em`;
       ball.style.height = ball.style.width;
