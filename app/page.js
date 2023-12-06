@@ -12,7 +12,7 @@ export default function HomePage() {
     <div>
       {/* <Background /> */}
       <Navigation />
-      {/* <Header /> */}
+      <Header />
       <div className={styles["projects-and-footer-container"]}>
         <div className={styles["projects-container"]} >
           <div className={styles["projects-header"]} id="projects">Projects</div>
