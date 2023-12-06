@@ -213,7 +213,7 @@
     .main-container {
         height: auto;
         justify-content: flex-start;
-        /* margin-top: 3rem; */
+        margin-top: 5rem;
     }
 
     .avatar {

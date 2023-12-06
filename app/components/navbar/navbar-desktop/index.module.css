@@ -67,7 +67,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .navbar-ul {
+    .navbar {
         display: none;
     }
 
