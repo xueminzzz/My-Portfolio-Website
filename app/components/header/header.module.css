@@ -21,7 +21,7 @@
     align-items: flex-start;
     width: 500px;
     height: 500px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .me {
