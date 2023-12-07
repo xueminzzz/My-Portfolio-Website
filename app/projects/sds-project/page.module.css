@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 100%;
     background-color: #f5f5f5;
     padding: 1.2rem;
 }
@@ -269,6 +269,7 @@
 
     .title-and-description {
         padding: 1rem;
+        width: 95%;
     }
 
     .collaborators {
