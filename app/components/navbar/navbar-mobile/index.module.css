@@ -18,7 +18,8 @@
     .navbar-ul {
         display: flex;
         flex-direction: column;
-        font-size: 1.13rem;
+        font-size: 1.5rem;
+        /* font-size: 1.13rem; */
         list-style: none;
         margin-top: 1.5rem;
         padding: 0;
@@ -42,11 +43,12 @@
 
 @media screen and (max-width: 320px) {
     .close-button {
-        width: 15px;
-        height: 15px;
+        /* width: 15px;
+        height: 15px; */
     }
 
     .navbar-ul {
-        font-size: 0.749rem;
+        font-size: 1.88rem;
+        /* font-size: 0.749rem; */
     }
 }

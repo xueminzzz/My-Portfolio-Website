@@ -177,7 +177,7 @@
   }
 
   .projects-header {
-    font-size: 1.88rem;
+    /* font-size: 1.88rem; */
   }
 
   .image-border {
@@ -190,7 +190,8 @@
 
 @media screen and (max-width: 320px) {
   .projects-header {
-    font-size: 1.25rem;
+    font-size: 1.88rem;
+    /* font-size: 1.25rem; */
   }
 
   .image-border {

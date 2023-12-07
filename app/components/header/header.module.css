@@ -190,7 +190,7 @@
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: -3rem;
     }
 
@@ -199,7 +199,7 @@
     }
 
     .about-me-button {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 0.8rem;
     }
 
@@ -228,11 +228,11 @@
     }
 
     .me {
-        font-size: 1.88rem;
+        /* font-size: 1.88rem; */
     }
 
     .title {
-        font-size: 1.13rem;
+        /* font-size: 1.13rem; */
         margin-top: -2.26rem;
     }
 
@@ -241,7 +241,7 @@
     }
 
     .about-me-button {
-        font-size: 1.13rem;
+        /* font-size: 1.13rem; */
         padding: 0.603rem;
     }
 
@@ -308,11 +308,13 @@
     }
 
     .me {
-        font-size: 1.25rem;
+        font-size: 1.88rem;
+        /* font-size: 1.25rem; */
     }
 
     .title {
-        font-size: 0.749rem;
+        /* font-size: 1.13rem; */
+        font-size: 0.8rem;
         margin-top: -1.5rem;
     }
 
@@ -321,7 +323,8 @@
     }
 
     .about-me-button {
-        font-size: 0.749rem;
+        /* font-size: 1.13rem; */
+        font-size: 0.8rem;
         padding: 0.4rem;
     }
 
@@ -336,7 +339,7 @@
 
     .scroll {
         color: #000000;
-        font-size: 1.25rem;
+        /* font-size: 1.25rem; */
     }
 
     .scroll-down-arrow {

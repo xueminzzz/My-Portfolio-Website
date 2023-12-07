@@ -58,27 +58,29 @@
     }
 
     .project-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .project-title {
-        font-size: 1.13rem;
+        /* font-size: 1.13rem; */
     }
 
     .project-description {
         margin-top: 1rem;
-        font-size: 0.942rem;
+        /* font-size: 0.942rem; */
     }
 }
 
 @media screen and (max-width: 320px) {
     .project-title {
-        font-size: 0.749rem;
+        font-size: 1.13rem;
+        /* font-size: 0.749rem; */
     }
 
     .project-description {
-        font-size: 0.624rem;
+        font-size: 0.942rem;
+        /* font-size: 0.624rem; */
     }
 }
