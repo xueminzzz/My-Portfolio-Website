@@ -9,11 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navigation />
-        <div className={styles["body-and-footer-container"]}>
-          {children}
-          <Footer />
-        </div>
+        {children}
       </body>
     </html>
   )
