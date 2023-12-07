@@ -14,7 +14,7 @@ export default function Navbar({ isOpen, toggle }) {
                     <Link href="/" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Home</li>
                     </Link>
-                    <Link href="#projects" className={styles["projects-link"]}>
+                    <Link href="/#projects" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Projects</li>
                     </Link>
                     <li className={styles["nav-item"]}>Resume</li>

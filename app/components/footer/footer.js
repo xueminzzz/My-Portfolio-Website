@@ -7,7 +7,7 @@ export default function Footer() {
             <div className={styles["footer-container"]}>
                 <div className={styles["lets-connect"]}>Let's Connect!</div>
                 <div className={styles["social-media-icon"]}>
-                    <Link href="/about-me">
+                    <Link href="/about-me#chat">
                         <button className={styles["mail"]}></button>
                     </Link>
                     <Link href="https://www.linkedin.com/in/ngxm" target="_blank">

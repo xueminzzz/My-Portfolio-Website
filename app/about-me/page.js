@@ -70,7 +70,7 @@ export default function AboutMe() {
 
                 <div className={`${styles["child-container"]} ${styles["container-dark"]}`}>
                     <div className={styles["container-dark-top"]}>
-                        <p className={styles["title"]}>Let's chat.</p>
+                        <p className={styles["title"]} id="chat">Let's chat.</p>
                         <Link href="/">
                             <button className={styles["close-button-dark"]}></button>
                         </Link>
