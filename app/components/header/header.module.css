@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 500px;
+    width: auto;
     height: 500px;
     /* text-align: justify; */
 }
@@ -81,7 +81,7 @@
     }
 
     .information {
-        width: 400px;
+        /* width: 400px; */
         height: 400px;
     }
 
@@ -116,7 +116,7 @@
     }
 
     .information {
-        width: 350px;
+        /* width: 350px; */
         height: 350px;
     }
 
@@ -151,7 +151,7 @@
     }
 
     .information {
-        width: 300px;
+        /* width: 300px; */
         height: 300px;
     }
 
@@ -181,7 +181,7 @@
     }
 
     .information {
-        width: 200px;
+        /* width: 200px; */
         height: 200px;
     }
 
@@ -223,7 +223,7 @@
 
     .information {
         height: 150px;
-        width: 150px;
+        /* width: 150px; */
 
     }
 
@@ -304,7 +304,7 @@
 
     .information {
         height: 100px;
-        width: 100px;
+        /* width: 100px; */
     }
 
     .me {
