@@ -57,18 +57,19 @@
 .project-summary {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 5rem;
     width: 50%;
 }
 
 .project {
     font-size: 4.16rem;
+    text-align: center;
 }
 
 .summary {
     margin-top: 2rem;
-    text-align: justify;
+    text-align: start;
     line-height: 4rem;
     font-size: 2.49rem;
 }
@@ -81,6 +82,34 @@
 .system-design {
     border: 2px solid black;
     margin-top: 2rem;
+}
+
+.website-container {
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.website-button {
+    font-size: 2.49rem;
+    color: black;
+    border: 2px solid black;
+    background: transparent;
+    padding: 1.99rem;
+    font-family: "futura";
+}
+
+.right-arrow {
+    background: url(/arrow-right.svg) left top no-repeat;
+    background-size: contain;
+    width: 74.8px;
+    height: 74.8px;
+    background-color: transparent;
+    border: none;
+}
+
+.link {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1536px) {
@@ -104,6 +133,16 @@
     .summary {
         font-size: 2rem;
         line-height: 3rem;
+    }
+
+    .website-button {
+        font-size: 2rem;
+        padding: 1.59rem;
+    }
+
+    .right-arrow {
+        height: 59.8px;
+        width: 59.8px;
     }
 }
 
@@ -135,6 +174,16 @@
     .summary {
         font-size: 1.75rem;
     }
+
+    .website-button {
+        font-size: 1.75rem;
+        padding: 1.4rem;
+    }
+
+    .right-arrow {
+        height: 52.4px;
+        width: 52.4px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -162,6 +211,16 @@
     .summary {
         font-size: 1.5rem;
     }
+
+    .website-button {
+        font-size: 2.25rem;
+        padding: 1rem;
+    }
+
+    .right-arrow {
+        height: 45px;
+        width: 45px;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -187,6 +246,16 @@
 
     .summary {
         font-size: 1rem;
+    }
+
+    .website-button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .right-arrow {
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -237,6 +306,20 @@
     .system-design {
         margin-top: 1rem;
     }
+
+    .website-container {
+        margin-top: 3rem;
+    }
+
+    .website-button {
+        font-size: 1.13rem;
+        padding: 0.603rem;
+    }
+
+    .right-arrow {
+        height: 22.6px;
+        width: 22.6px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -259,5 +342,15 @@
     .summary {
         font-size: 0.749rem;
         line-height: 1.5rem;
+    }
+
+    .website-button {
+        font-size: 0.749rem;
+        padding: 0.4rem;
+    }
+
+    .right-arrow {
+        height: 15px;
+        width: 15px;
     }
 }

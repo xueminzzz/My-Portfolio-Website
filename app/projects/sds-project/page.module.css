@@ -62,13 +62,14 @@
 .project-summary {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 5rem;
     width: 50%;
 }
 
 .project {
     font-size: 4.16rem;
+    text-align: center;
 }
 
 .summary {
