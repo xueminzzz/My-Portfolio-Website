@@ -273,7 +273,7 @@
     }
 
     .collaborators {
-        font-size: 0.942rem;
+        font-size: 1rem;
         margin-top: 1rem;
     }
 
@@ -282,7 +282,7 @@
     }
 
     .description-container {
-        font-size: 1.13rem;
+        font-size: 1.2rem;
     }
 
     .project-summary {
@@ -294,7 +294,7 @@
     }
 
     .summary {
-        font-size: 1.13rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         margin-top: 1rem;
     }
@@ -304,7 +304,7 @@
     }
 
     .website-button {
-        font-size: 1.13rem;
+        font-size: 1.2rem;
         padding: 0.603rem;
     }
 
