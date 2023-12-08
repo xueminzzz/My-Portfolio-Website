@@ -24,7 +24,7 @@
 }
 
 .name {
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     font-size: 2.49rem;
 }
 
@@ -42,7 +42,7 @@
 
 /* 1.5em = 30px as parent element (navbar-ul) is set to 20px */
 .nav-item {
-    margin-right: 1.5em;
+    margin-right: 2.5rem;
 }
 
 .nav-item:hover {
