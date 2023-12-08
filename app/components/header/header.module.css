@@ -54,6 +54,7 @@
     color: #ffffff;
     font-weight: bold;
     font-family: 'helvetica';
+    border-radius: 40px;
 }
 
 .right-arrow {
@@ -166,6 +167,7 @@
     .about-me-button {
         font-size: 2.25rem;
         padding: 1.2rem;
+        border-radius: 30px;
     }
 
     .right-arrow {
@@ -243,6 +245,7 @@
     .about-me-button {
         /* font-size: 1.13rem; */
         padding: 0.603rem;
+        border-radius: 20px;
     }
 
     .right-arrow {
