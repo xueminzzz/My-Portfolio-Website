@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 20%;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .mail {
@@ -113,7 +113,7 @@
     }
 
     .social-media-icon {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         width: 40%;
     }
 
@@ -139,7 +139,7 @@
     }
 
     .social-media-icon {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         width: 30%;
     }
 
@@ -169,7 +169,7 @@
     }
 
     .social-media-icon {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .mail {
