@@ -24,7 +24,7 @@
 .social-media-icon {
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
+    width: 20%;
     margin-top: 3rem;
 }
 
@@ -62,7 +62,7 @@
 
     .social-media-icon {
         /* margin-top: 4rem; */
-        /* width: 30%; */
+        width: 30%;
     }
 
     .mail {
@@ -84,6 +84,11 @@
 @media screen and (max-width: 1024px) {
     .lets-connect {
         font-size: 4.38rem;
+    }
+
+    .social-media-icon {
+        /* margin-top: 4rem; */
+        width: 35%;
     }
 
     .mail {
@@ -167,20 +172,20 @@
         margin-top: 1rem;
     }
 
-    /* .mail {
-        height: 22.6px;
-        width: 22.6px;
+    .mail {
+        height: 25px;
+        width: 25px;
     }
 
     .linkedin {
-        height: 22.6px;
-        width: 22.6px;
+        height: 25px;
+        width: 25px;
     }
 
     .github {
-        height: 22.6px;
-        width: 22.6px;
-    } */
+        height: 25px;
+        width: 25px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -193,17 +198,17 @@
     }
 
     .mail {
-        height: 22.6px;
-        width: 22.6px;
+        height: 18px;
+        width: 18px;
     }
 
     .linkedin {
-        height: 22.6px;
-        width: 22.6px;
+        height: 18px;
+        width: 18px;
     }
 
     .github {
-        height: 22.6px;
-        width: 22.6px;
+        height: 18px;
+        width: 18px;
     }
 }
