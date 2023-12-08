@@ -31,8 +31,8 @@
 .mail {
     background: url(/mail.svg) left top no-repeat;
     background-size: contain;
-    width: 60px;
-    height: 60px;
+    width: 74.8px;
+    height: 74.8px;
     background-color: transparent;
     border: none;
 }
@@ -40,8 +40,8 @@
 .linkedin {
     background: url(/linkedin.svg) left top no-repeat;
     background-size: contain;
-    width: 60px;
-    height: 60px;
+    width: 74.8px;
+    height: 74.8px;
     background-color: transparent;
     border: none;
 }
@@ -49,8 +49,8 @@
 .github {
     background: url(/github.svg) left top no-repeat;
     background-size: contain;
-    width: 60px;
-    height: 60px;
+    width: 74.8px;
+    height: 74.8px;
     background-color: transparent;
     border: none;
 }
