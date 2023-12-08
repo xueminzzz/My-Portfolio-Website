@@ -216,7 +216,7 @@
     }
 }
 
-@media screen and (max-width: 630px) {
+/* @media screen and (max-width: 630px) {
     .title {
         font-size: 1.67rem;
     }
@@ -250,7 +250,7 @@
         height: 30px;
         width: 30px;
     }
-}
+} */
 
 @media screen and (max-width: 480px) {
     .main-container {
