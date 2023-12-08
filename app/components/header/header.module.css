@@ -317,17 +317,17 @@
 
     .title {
         /* font-size: 1.13rem; */
-        font-size: 0.8rem;
-        margin-top: -1.5rem;
+        font-size: 0.942rem;
+        margin-top: -1rem;
     }
 
     .about-me-container {
-        margin-top: -1.5rem;
+        margin-top: -1rem;
     }
 
     .about-me-button {
         /* font-size: 1.13rem; */
-        font-size: 0.8rem;
+        font-size: 0.942rem;
         padding: 0.4rem;
     }
 
