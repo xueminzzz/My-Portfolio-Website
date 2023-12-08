@@ -11,12 +11,17 @@
 .navbar {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     background-color: white;
     /* height: 50px; */
+}
+
+.name {
+    margin-left: 1.5rem;
+    font-size: 2.49rem;
 }
 
 /* .hamburger {
@@ -50,10 +55,18 @@
     .navbar-ul {
         font-size: 2rem;
     }
+
+    .name {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .navbar-ul {
+        font-size: 1.75rem;
+    }
+
+    .name {
         font-size: 1.75rem;
     }
 }
@@ -62,10 +75,18 @@
     .navbar-ul {
         font-size: 1.5rem;
     }
+
+    .name {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 630px) {
     .navbar-ul {
+        font-size: 1rem;
+    }
+
+    .name {
         font-size: 1rem;
     }
 }
@@ -75,7 +96,17 @@
         display: none;
     }
 
-    .hamburger-container {
+    .hamburger-container-close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        background-color:white;
+        top: 0;
+    }
+
+    .hamburger-container-open {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -83,6 +114,17 @@
         width: 100%;
         background-color:white;
         top: 0;
+    }
+
+    .name {
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .name-close {
+        display: none;
     }
 
     .hamburger {
@@ -94,9 +136,9 @@
         width: 30px;
         /* width: 22.6px;
         height: 22.6px; */
-        margin-top: 0.8rem;
-        margin-right: 0.8rem;
-        margin-bottom: 0.8rem;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
         background-color: transparent;
         border: none;
     }
@@ -124,6 +166,10 @@
         height: 22.6px;
         /* height: 15px;
         width: 15px; */
+    }
+
+    .name {
+        font-size: 1.13rem;
     }
 
     .close-button {
