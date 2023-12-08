@@ -268,7 +268,7 @@
 
 @media screen and (max-width: 480px) {
     .main-container {
-        margin-top: 0;
+        margin-top: 2rem;
     }
 
     .project-header {
