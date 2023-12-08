@@ -304,6 +304,7 @@
     .website-button {
         font-size: 1.2rem;
         border: 1px solid black;
+        border-radius: 20px;
         padding: 0.603rem;
     }
 
