@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div className={styles["main-container"]}>
+        // <div className={styles["main-container"]}>
             <div className={styles["footer-container"]}>
                 <div className={styles["lets-connect"]}>Let's Connect!</div>
                 <div className={styles["social-media-icon"]}>
@@ -18,6 +18,6 @@ export default function Footer() {
                     </Link>
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }

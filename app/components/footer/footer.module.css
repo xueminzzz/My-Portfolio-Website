@@ -1,6 +1,9 @@
 .main-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .footer-container {
@@ -8,12 +11,13 @@
     height: auto;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 5rem;
     background-color: #3CC157;
 }
 
 .lets-connect {
-    font-size: 5.21rem;
+    font-size: 6.25rem;
     color: white;
 }
 
@@ -21,7 +25,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 20%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .mail {
@@ -53,12 +57,12 @@
 
 @media screen and (max-width: 1536px) {
     .lets-connect {
-        font-size: 4.17rem;
+        font-size: 5rem;
     }
 
     .social-media-icon {
-        margin-top: 4rem;
-        width: 25%;
+        /* margin-top: 4rem; */
+        width: 30%;
     }
 
     .mail {
@@ -79,7 +83,7 @@
 
 @media screen and (max-width: 1024px) {
     .lets-connect {
-        font-size: 3.65rem;
+        font-size: 4.38rem;
     }
 
     .mail {
@@ -100,12 +104,11 @@
 
 @media screen and (max-width: 768px) {
     .lets-connect {
-        font-size: 3.13rem;
+        font-size: 3.75rem;
     }
 
     .social-media-icon {
-        margin-top: 3rem;
-        width: 30%;
+        margin-top: 2rem;
     }
 
     .mail {
@@ -127,6 +130,10 @@
 @media screen and (max-width: 630px) {
     .lets-connect {
         font-size: 2.5rem;
+    }
+
+    .social-media-icon {
+        margin-top: 1.5rem;
     }
 
     .mail {
@@ -157,12 +164,6 @@
     .social-media-icon {
         margin-top: 1rem;
     }
-}
-
-@media screen and (max-width: 320px) {
-    .lets-connect {
-        font-size: 1.25rem;
-    }
 
     .mail {
         height: 22.6px;
@@ -177,5 +178,30 @@
     .github {
         height: 22.6px;
         width: 22.6px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lets-connect {
+        font-size: 1.25rem;
+    }
+
+    .social-media-icon {
+        margin-top: 0.5rem;
+    }
+
+    .mail {
+        height: 15px;
+        width: 15px;
+    }
+
+    .linkedin {
+        height: 15px;
+        width: 15px;
+    }
+
+    .github {
+        height: 15px;
+        width: 15px;
     }
 }
