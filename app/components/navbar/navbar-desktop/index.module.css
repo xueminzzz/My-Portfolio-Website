@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.hamburger-container {
+    display: none;
+}
+
 .navbar {
     display: flex;
     width: 100%;
@@ -12,12 +16,12 @@
     position: fixed;
     top: 0;
     background-color: white;
-    height: 50px;
+    /* height: 50px; */
 }
 
-.hamburger {
+/* .hamburger {
     display: none;
-}
+} */
 
 /* 2rem = 20px as my html is set to 10px */
 .navbar-ul {
@@ -71,18 +75,28 @@
         display: none;
     }
 
+    .hamburger-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        background-color:white;
+        top: 0;
+    }
+
     .hamburger {
         display: flex;
-        position: fixed;
-        top: 0;
+        /* position: fixed; */
         background: url(/hamburger-icon.svg) left top no-repeat;
         background-size: contain;
         height: 30px;
         width: 30px;
         /* width: 22.6px;
         height: 22.6px; */
-        margin-top: 1.5rem;
-        margin-right: 1.5rem;
+        margin-top: 0.8rem;
+        margin-right: 0.8rem;
+        margin-bottom: 0.8rem;
         background-color: transparent;
         border: none;
     }

@@ -9,10 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: auto; */
-    margin-top: 50px;
-    /* overflow-x: hidden; */
-   
 }
 
 .project-header {

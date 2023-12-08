@@ -30,47 +30,29 @@
 }
 
 .image-border {
+  padding: 30px;
+  width: 550px;
+  height: 550px;
   margin-top: 5rem;
-  /* the border color */
-  --border: 10px;
-  /* the border thickness*/
-  --offset: 20px;
-  /* control the offset*/
-  --gap: 5px;
-  /* the gap on hover */
-
-  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)), var(--color) 0;
-  --_o: calc(3*var(--offset));
-  padding:
-    calc(var(--gap) + var(--border)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border) + var(--offset)) calc(var(--gap) + var(--border));
-  background:
-    linear-gradient(var(--_c)) var(--_o) var(--_o),
-    linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
-  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
-  background-repeat: no-repeat;
-  filter: grayscale(.2);
-  transition: .5s;
-  cursor: pointer;
+  border-radius: 40px;
+  border: 5px solid transparent;
 }
 
 .image-border:hover {
-  --offset: 0px;
-  filter: grayscale(0);
-  display: flex;
-  align-self: center;
+  padding: 20px;
 }
 
 .project1-border {
-  --color: #3CC157;
+  border-color: #3CC157;
 }
 
 .project2-border {
-  --color: #FCBC0F;
+  border-color: #FCBC0F;
 }
 
-.project3-border {
+/* .project3-border {
   --color: #2B5ADC;
-}
+} */
 
 .projects-link {
   color: black;
@@ -89,7 +71,7 @@
   .image-border {
     width: 450px;
     height: 450px;
-    --border: 9px;
+    /* --border: 9px; */
   }
 }
 
@@ -115,9 +97,15 @@
   }
 
   .image-border {
+    padding: 15px;
     width: 350px;
     height: 350px;
-    --border: 8px;
+    border-radius: 30px;
+    /* --border: 8px; */
+  }
+
+  .image-border:hover {
+    padding: 7.5px
   }
 }
 
@@ -129,12 +117,12 @@
   .image-border {
     width: 250px;
     height: 250px;
-    --border: 6px;
+    /* --border: 6px; */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .scroll {
+  /* .scroll {
     text-align: center;
   }
 
@@ -170,7 +158,7 @@
     60% {
       transform: translateY(-15px);
     }
-  }
+  } */
 
   .projects-container {
     margin-top: 5rem;
@@ -181,10 +169,15 @@
   }
 
   .image-border {
+    padding: 10px;
     margin-top: 3rem;
     width: 200px;
     height: 200px;
-    --border: 5px;
+    border-radius: 20px;
+  }
+
+  .image-border:hover {
+    padding: 5px;
   }
 }
 
@@ -197,6 +190,6 @@
   .image-border {
     width: 150px;
     height: 150px;
-    --border: 4px;
+    /* --border: 4px; */
   }
 }

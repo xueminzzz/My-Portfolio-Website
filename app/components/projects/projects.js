@@ -6,8 +6,8 @@ export default function Projects(props) {
         <div className={styles["projects-card"]}>
             <Image
                 src={props.image}
-                width={550}
-                height={550}
+                width={0}
+                height={0}
                 className={props.className}
             />
             <div className={styles["project-title"]}>{props.title}</div>

@@ -7,8 +7,10 @@ import { useState } from "react";
 export default function Navbar({ isOpen, toggle }) {
     return (
         <div className={styles["main-container"]} >
-            <button onClick={toggle} className={isOpen ? styles["close-button"] : styles["hamburger"]}>
-            </button>
+            <div className={styles["hamburger-container"]}>
+                <button onClick={toggle} className={isOpen ? styles["close-button"] : styles["hamburger"]}>
+                </button>
+            </div>
             <nav className={styles["navbar"]}>
                 <ul className={styles["navbar-ul"]}>
                     <Link href="/" className={styles["projects-link"]}>
