@@ -13,7 +13,7 @@
 }
 
 .lets-connect {
-    font-size: 6.25rem;
+    font-size: 5.21rem;
     color: white;
 }
 
@@ -53,12 +53,12 @@
 
 @media screen and (max-width: 1536px) {
     .lets-connect {
-        font-size: 5rem;
+        font-size: 4.17rem;
     }
 
     .social-media-icon {
         margin-top: 4rem;
-        width: 30%;
+        width: 25%;
     }
 
     .mail {
@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 1024px) {
     .lets-connect {
-        font-size: 4.38rem;
+        font-size: 3.65rem;
     }
 
     .mail {
@@ -100,11 +100,12 @@
 
 @media screen and (max-width: 768px) {
     .lets-connect {
-        font-size: 3.75rem;
+        font-size: 3.13rem;
     }
 
     .social-media-icon {
         margin-top: 3rem;
+        width: 30%;
     }
 
     .mail {
