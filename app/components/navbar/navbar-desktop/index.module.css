@@ -4,7 +4,11 @@
     align-items: center;
 }
 
-.hamburger-container {
+.hamburger-container-open {
+    display: none;
+}
+
+.hamburger-container-close {
     display: none;
 }
 
