@@ -25,6 +25,7 @@
     padding: 7rem;
     height: auto;
     width: 100%;
+    border-radius: 40px;
 }
 
 .container-light {
@@ -35,7 +36,6 @@
 .container-dark {
     background: #396FED;
     color: #ffffff;
-    border-radius: 40px;
 }
 
 .title {
@@ -197,9 +197,6 @@
     .child-container {
         width: 90%;
         padding: 4rem;
-    }
-
-    .container-dark {
         border-radius: 0px;
     }
 
