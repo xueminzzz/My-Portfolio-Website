@@ -167,7 +167,7 @@
         margin-top: 1rem;
     }
 
-    .mail {
+    /* .mail {
         height: 22.6px;
         width: 22.6px;
     }
@@ -180,7 +180,7 @@
     .github {
         height: 22.6px;
         width: 22.6px;
-    }
+    } */
 }
 
 @media screen and (max-width: 320px) {
@@ -193,17 +193,17 @@
     }
 
     .mail {
-        height: 15px;
-        width: 15px;
+        height: 22.6px;
+        width: 22.6px;
     }
 
     .linkedin {
-        height: 15px;
-        width: 15px;
+        height: 22.6px;
+        width: 22.6px;
     }
 
     .github {
-        height: 15px;
-        width: 15px;
+        height: 22.6px;
+        width: 22.6px;
     }
 }
