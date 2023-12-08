@@ -30,16 +30,17 @@
 }
 
 .image-border {
-  padding: 30px;
+  padding: 20px;
   width: 550px;
   height: 550px;
   margin-top: 5rem;
   border-radius: 40px;
-  border: 5px solid transparent;
+  border: 8px solid;
+  border-style: solid;
 }
 
 .image-border:hover {
-  padding: 20px;
+  padding: 10px;
 }
 
 .project1-border {
@@ -101,11 +102,19 @@
     width: 350px;
     height: 350px;
     border-radius: 30px;
-    /* --border: 8px; */
+    border: 6px solid;
   }
 
   .image-border:hover {
     padding: 7.5px
+  }
+
+  .project1-border {
+    border-color: #3CC157;
+  }
+  
+  .project2-border {
+    border-color: #FCBC0F;
   }
 }
 
@@ -117,7 +126,6 @@
   .image-border {
     width: 250px;
     height: 250px;
-    /* --border: 6px; */
   }
 }
 
@@ -174,10 +182,19 @@
     width: 200px;
     height: 200px;
     border-radius: 20px;
+    border: 4px solid;
   }
 
   .image-border:hover {
     padding: 5px;
+  }
+
+  .project1-border {
+    border-color: #3CC157;
+  }
+  
+  .project2-border {
+    border-color: #FCBC0F;
   }
 }
 
