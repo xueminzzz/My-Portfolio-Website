@@ -148,6 +148,10 @@
         font-size: 1.46rem;
     }
 
+    .title-and-description {
+        width: 95%;
+    }
+
     .description-container {
         width: 60%;
     }
@@ -186,10 +190,6 @@
 
     .collaborators {
         font-size: 1.25rem;
-    }
-
-    .title-and-description {
-        width: 90%;
     }
 
     .description-container {
