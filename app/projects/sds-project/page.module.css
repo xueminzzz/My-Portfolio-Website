@@ -115,6 +115,10 @@
         margin-top: 1.5rem;
     }
 
+    .title-and-description {
+        width: 95%;
+    }
+
     .description-container {
         font-size: 2rem;
     }
@@ -146,10 +150,6 @@
 
     .collaborators {
         font-size: 1.46rem;
-    }
-
-    .title-and-description {
-        width: 95%;
     }
 
     .description-container {
