@@ -192,6 +192,10 @@
         font-size: 1.25rem;
     }
 
+    .title-and-description {
+        width: 97%;
+    }
+
     .description-container {
         font-size: 1.5rem;
         width: 70%;
@@ -270,6 +274,7 @@
     }
 
     .title-and-description {
+        width: 95%;
         padding: 1rem;
     }
 
