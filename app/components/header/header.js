@@ -33,6 +33,12 @@ export default function Header() {
                     <button className={`${styles["scroll-down-arrow"]} ${styles["bounce"]}`}></button>
                 </Link>
             </div> */}
+            <Link href="#projects">
+                <div className={styles["arrow"]}>
+                    <span></span>
+                    <span></span>
+                </div>
+            </Link>
         </div>
     )
 }

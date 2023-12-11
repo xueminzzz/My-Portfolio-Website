@@ -66,13 +66,53 @@
     border: none;
 }
 
-.scroll {
+/* .scroll {
     color: transparent;
 }
 
 .scroll-down-arrow {
     background-color: transparent;
     border: none;
+} */
+
+.arrow {
+    transform: rotate(-360deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(90deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(40px, 40px);
+    }
 }
 
 @media screen and (max-width: 1536px) {
@@ -213,7 +253,7 @@
 
 @media screen and (max-width: 480px) {
     .main-container {
-        height: auto;
+        height: 100vh;
         justify-content: flex-start;
         margin-top: 8rem;
     }
@@ -253,7 +293,18 @@
         width: 22.6px;
     }
 
-    .scroll-container {
+    .arrow {
+        margin-top: 50px;
+    }
+
+    .arrow span {
+        height: 10px;
+        width: 10px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+    /* .scroll-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -296,7 +347,7 @@
         60% {
             transform: translateY(-15px);
         }
-    }
+    } */
 }
 
 @media screen and (max-width: 320px) {
@@ -336,17 +387,10 @@
         width: 15px;
     }
 
-    .scroll-container {
-        margin-top: 1.5rem;
-    }
-
-    .scroll {
-        color: #000000;
-        /* font-size: 1.25rem; */
-    }
-
-    .scroll-down-arrow {
-        width: 15px;
-        height: 15px;
+    .arrow span {
+        height: 5px;
+        width: 5px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
     }
 }
