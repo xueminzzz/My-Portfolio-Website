@@ -23,6 +23,7 @@
   justify-content: center;
   font-size: 6.25rem;
   font-weight: bold;
+  display: none;
 }
 
 .projects-link {

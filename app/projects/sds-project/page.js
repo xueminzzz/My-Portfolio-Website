@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Player from "@/app/components/video/sds-video";
 import Link from "next/link";
+import FadeInSection from "@/app/fade-in";
 
 export default function SDS() {
     return (
@@ -13,6 +14,7 @@ export default function SDS() {
                 height={0}
                 className={styles["project-header"]}
             />
+
             <div className={styles["title-and-description"]}>
                 <div className={styles["title"]}>Redesiging CPF Mobile Application</div>
                 <div className={styles["collaborators"]}>SUTD x CPF x Goggle</div>
@@ -27,6 +29,7 @@ export default function SDS() {
                     </div>
                 </div>
             </div>
+
             <div className={styles["project-summary"]}>
                 <div className={styles["project"]}>The Project</div>
                 <div className={styles["summary"]}>
