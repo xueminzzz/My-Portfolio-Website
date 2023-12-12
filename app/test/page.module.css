@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    text-align: justify;
+}
+
+.text-1 {
+    background-color: aliceblue;
+    width: 100%;
+}
