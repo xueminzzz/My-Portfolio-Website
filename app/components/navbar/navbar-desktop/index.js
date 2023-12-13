@@ -21,7 +21,7 @@ export default function Navbar({ isOpen, toggle }) {
                     <Link href="/#projects" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Projects</li>
                     </Link>
-                    <Link href="test">
+                    <Link href="/test">
                         <li className={styles["nav-item"]}>Resume</li>
                     </Link>
                 </ul>
