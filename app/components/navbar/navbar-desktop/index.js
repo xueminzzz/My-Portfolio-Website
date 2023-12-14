@@ -8,12 +8,16 @@ export default function Navbar({ isOpen, toggle }) {
     return (
         <div className={styles["main-container"]}>
             <div className={isOpen ? styles["hamburger-container-open"] : styles["hamburger-container-close"]}>
-                <div className={isOpen ? styles["name-close"] : styles["name"]}>✿Xue Min✿</div>
+                <Link href="/" className={styles["projects-link"]}>
+                    <div className={isOpen ? styles["name-close"] : styles["name"]}>✿Xue Min✿</div>
+                </Link>
                 <button onClick={toggle} className={isOpen ? styles["close-button"] : styles["hamburger"]}>
                 </button>
             </div>
             <nav className={styles["navbar"]}>
-                <div className={styles["name"]}>✿Xue Min✿</div>
+                <Link href="/" className={styles["projects-link"]}>
+                    <div className={styles["name"]}>✿Xue Min✿</div>
+                </Link>
                 <ul className={styles["navbar-ul"]}>
                     <Link href="/" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Home</li>
@@ -21,9 +25,7 @@ export default function Navbar({ isOpen, toggle }) {
                     <Link href="/#projects" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Projects</li>
                     </Link>
-                    <Link href="/test">
-                        <li className={styles["nav-item"]}>Resume</li>
-                    </Link>
+                    <li className={styles["nav-item"]}>Resume</li>
                 </ul>
             </nav>
         </div>
