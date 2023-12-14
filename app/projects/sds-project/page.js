@@ -54,14 +54,12 @@ export default function SDS() {
                 </Animation>
             </div>
             <Link href="https://sites.google.com/mymail.sutd.edu.sg/creaitivestudios/home" className={styles["link"]} target="blank">
-                <div className={styles["website-container"]}>
-                    <Animation>
+                <Animation>
+                    <div className={styles["website-container"]}>
                         <button className={styles["website-button"]}>Website</button>
-                    </Animation>
-                    <Animation>
                         <button className={styles["right-arrow"]}></button>
-                    </Animation>
-                </div>
+                    </div>
+                </Animation>
             </Link>
         </div >
     )
