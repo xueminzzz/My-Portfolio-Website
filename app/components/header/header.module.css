@@ -253,8 +253,9 @@
 
 @media screen and (max-width: 480px) {
     .main-container {
-        height: 100vh;
-        justify-content: flex-start;
+        /* height: 100vh; */
+        height: auto;
+        justify-content: flex-end;
         margin-top: 8rem;
     }
 
