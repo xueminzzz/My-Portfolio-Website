@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Player from "@/app/components/video/infosys-video";
 import Link from "next/link";
+import Animation from "@/app/scroll-animation";
 
 export default function IS() {
     return (

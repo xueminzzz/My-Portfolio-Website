@@ -4,9 +4,8 @@ import useIntersectionObserver from "./useInteractionObserver"
 
 const withLazyLoad = (WrappedComponent, threshold = 0.5) => {
     return (props) => {
-        const [isInView, ref, isIntersecting, hasRendered] = useIntersectionObserver(threshold);
+        const [isInView, ref] = useIntersectionObserver(threshold);
         const [hasLoaded, setHasLoaded] = useState(false);
-        console.log({isIntersecting, hasRendered});
 
         useEffect(() => {
             if (isInView && !hasLoaded) {
