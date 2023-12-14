@@ -60,15 +60,12 @@ export default function IS() {
                         The app uses the <strong>Model-View-Controller framework</strong>. The diagram below summarizes the MVC framework
                         of our app.
                     </div>
-
                     <Image
                         src={"/infosys-project-system-design.svg"} priority={true}
                         width={0}
                         height={0}
                         className={`${styles["project-header"]} ${styles["system-design"]}`}
                     />
-                </Animation>
-                <Animation>
                     <div className={styles["summary"]}>
                         <strong>The Model</strong> interacts directly with our database. The Java classes that reside in our
                         Model updates our database. They make use of various design patterns
