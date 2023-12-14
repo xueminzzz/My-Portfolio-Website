@@ -169,10 +169,6 @@
     }
   } */
 
-  .projects-container {
-    margin-top: 20rem;
-  }
-
   .projects-header {
     /* font-size: 1.88rem; */
   }
@@ -203,10 +199,6 @@
   .projects-header {
     font-size: 1.88rem;
     /* font-size: 1.25rem; */
-  }
-
-  .projects-container {
-    margin-top: 25rem;
   }
 
   .image-border {
