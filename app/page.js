@@ -7,6 +7,8 @@ import Navigation from "./components/navbar";
 import Footer from "./components/footer/footer";
 import Link from "next/link";
 import Animation from "./scroll-animation";
+import transition from "./page-to-page-animation";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function HomePage() {
   return (
@@ -18,7 +20,9 @@ export default function HomePage() {
         <div className={styles["projects-container"]} >
           <div className={styles["projects-header"]} >Projects</div>
           <div className={styles["projects"]}>
+            <motion.div>
             <Link href="/projects/sds-project" className={styles["projects-link"]}>
+              {/* <PageTransition projectKey="sds-project"> */}
               <Animation>
                 <Projects
                   image="/sds-project-placeholder.svg"
@@ -27,7 +31,9 @@ export default function HomePage() {
                   className={`${styles["image-border"]} ${styles["project1-border"]}`}
                 />
               </Animation>
+              {/* </PageTransition> */}
             </Link>
+            </motion.div>
             <Link href="/projects/infosys-project" className={styles["projects-link"]}>
               <Animation>
                 <Projects

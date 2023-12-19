@@ -3,8 +3,14 @@ import styles from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import PageTransition from "@/app/page-to-page-animation";
+import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import transition from "@/app/page-to-page-animation";
 
 export default function Navbar({ isOpen, toggle }) {
+    const router = useRouter();
+    const TransitionLink = transition(motion.a);
     return (
         <div className={styles["main-container"]}>
             <div className={isOpen ? styles["hamburger-container-open"] : styles["hamburger-container-close"]}>
@@ -25,7 +31,21 @@ export default function Navbar({ isOpen, toggle }) {
                     <Link href="/#projects" className={styles["projects-link"]}>
                         <li className={styles["nav-item"]}>Projects</li>
                     </Link>
-                    <li className={styles["nav-item"]}>Resume</li>
+                    {/* <TransitionLink> */}
+                        {/* <motion.a
+                            href="/test"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                router.push("/test");
+                            }}
+                            className={`${styles["projects-link"]} ${styles["nav-item"]}`}
+                        >
+                            Resume
+                        </motion.a> */}
+                    {/* </TransitionLink> */}
+                    <Link href="/test" className={styles["projects-link"]}>
+                        <li className={styles["nav-item"]}>Resume</li>
+                    </Link>
                 </ul>
             </nav>
         </div>

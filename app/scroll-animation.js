@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
+import { useAnimationControls, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const animationVariants = {
@@ -10,7 +10,7 @@ const animationVariants = {
 
 
 export default function Animation({ children }) {
-    const controls = useAnimation();
+    const controls = useAnimationControls();
     const [ref, inView] = useInView();
 
     useEffect(() => {

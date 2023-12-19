@@ -1,0 +1,6 @@
+.main-container {
+    height: 100px;
+    width: 100px;
+    /* position: fixed; */
+    background-color: black;
+}

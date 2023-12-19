@@ -4,8 +4,9 @@ import Image from "next/image";
 import Player from "@/app/components/video/sds-video";
 import Link from "next/link";
 import Animation from "@/app/scroll-animation";
+import transition from "@/app/page-to-page-animation";
 
-export default function SDS() {
+const SDS = () => {
     return (
         <div className={styles["main-container"]}>
             <Image
@@ -64,3 +65,5 @@ export default function SDS() {
         </div >
     )
 }
+
+export default SDS
