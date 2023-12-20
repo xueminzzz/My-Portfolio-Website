@@ -5,3 +5,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.test-1-open {
+    display: none;
+}
+
+.test-1-closed {
+    position: fixed;
+}

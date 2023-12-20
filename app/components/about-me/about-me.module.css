@@ -1,0 +1,234 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+}
+
+.parent-container {
+    display: flex;
+    width: 70%;
+    height: auto;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 8px solid transparent;
+    border-radius: 40px;
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem;
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.container-light {
+    background: #ffffff;
+    color: #396FED;
+}
+
+.container-dark {
+    background: #396FED;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: -2rem;
+    font-size: 2rem;
+}
+
+.about-me-content {
+    text-align: justify;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #396FED;
+}
+
+.container-dark-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-light-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button-dark {
+    background: url(/close-button-dark.svg) left top no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+.close-button-light {
+    background: transparent;
+    border: none;
+}
+
+.line-input {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: 'futura';
+    /* zoom: 1; */
+}
+
+.line-input:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.form {
+    font-size: 3rem;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.submit-button {
+    width: fit-content;
+    margin-top: 2em;
+    font-size: 2.5rem;
+    padding: 0.8em;
+    border: none;
+    background: #ffffff;
+    color: #396FED;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.success-message {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+@media screen and (max-width: 1536px) {
+    .child-container {
+        padding: 5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .about-me-content {
+        font-size: 1.5rem;
+    }
+
+    .close-button-dark {
+        height: 40px;
+        width: 40px;
+    }
+
+    .line-input {
+        font-size: 1.5rem;
+    }
+
+    .form {
+        font-size: 1.5rem;
+    }
+
+    .submit-button {
+        font-size: 1.5rem;
+    }
+
+    .success-message {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .parent-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        background-color: #ffffff;
+    }
+
+    .parent-container {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .child-container {
+        width: 90%;
+        padding: 4rem;
+        border-radius: 0px;
+    }
+
+    .close-button-dark {
+        background: transparent;
+        border: none;
+    }
+
+    .close-button-light {
+        background: url(/close-button-light.svg) left top no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .submit-button {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        background-color: #396FED;
+    }
+
+    .child-container {
+        padding: 3rem;
+    }
+
+    .submit-button {
+        border-radius: 20px;
+    }
+}

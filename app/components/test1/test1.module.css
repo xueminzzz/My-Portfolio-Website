@@ -1,6 +1,17 @@
 .main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-1-open {
     height: 100px;
     width: 100px;
-    /* position: fixed; */
-    background-color: black;
+    border: 1px solid black;
+    position: fixed;
+}
+
+.test-1-close {
+    display: none;
 }

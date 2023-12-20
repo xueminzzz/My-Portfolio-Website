@@ -1,27 +1,26 @@
 import styles from "./test.module.css";
+import { motion } from "framer-motion";
 import Test1 from "../test1/test1";
 import { useState } from "react";
 
 const Test = () => {
-    const [isOpen, setOpen] = useState(true);
-
-    console.log({ isOpen })
+    const [isOpen, setOpen] = useState(false);
 
     const showTest1 = () => {
-        setOpen(true)
-        console.log("rendered show")
-    }
-
-    const hideTest1 = () => {
-        setOpen(false)
-        console.log("rendered close")
+        setOpen(!isOpen)
     }
 
     return (
         <div className={styles["main-container"]}>
-            <button onClick={showTest1}>OPEN</button>
-            <button onClick={hideTest1}>CLOSE</button>
-            {isOpen && <Test1 isOpen={isOpen} />}
+            <motion.div
+                initial={{ opacity: 1 }}
+                animate={{ opacity: isOpen ? 0 : 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1 }}
+            >
+                <button onClick={showTest1} className={isOpen ? styles["test-1-open"] : styles["test-1-close"]}>OPEN</button>
+            </motion.div>
+            {<Test1 isOpen={isOpen} showTest1={showTest1} />}
         </div>
     )
 }
