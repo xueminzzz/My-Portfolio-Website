@@ -17,7 +17,9 @@ export default function Sidebar({ isOpen, toggle }) {
                 <Link href="/#projects" className={styles["projects-link"]}>
                     <li className={styles["nav-item"]} onClick={toggle}>Projects</li>
                 </Link>
-                <li className={styles["nav-item"]} onClick={toggle}>Resume</li>
+                <Link href="/test" className={styles["projects-link"]}>
+                    <li className={styles["nav-item"]} onClick={toggle}>Resume</li>
+                </Link>
             </ul>
         </div>
     )
