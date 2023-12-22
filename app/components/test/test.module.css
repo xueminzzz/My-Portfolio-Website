@@ -1,9 +1,11 @@
 .main-container {
     height: 100vh;
+    width: 100vw;
     background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 .test-1-open {
@@ -13,3 +15,34 @@
 .test-1-closed {
     position: fixed;
 }
+
+/* .test-close {
+    display: none;
+}
+
+.test-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    position: fixed;
+} */
+
+/* .test-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+.test-closed {
+    display: none;
+}
+
+.button {
+    position: fixed;
+} */

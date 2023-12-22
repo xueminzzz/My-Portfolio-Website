@@ -1,8 +1,9 @@
-.main-container {
-    height: 100vh;
+/* .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 .test-1-open {
@@ -14,4 +15,32 @@
 
 .test-1-close {
     display: none;
+}
+
+.button-1-open {
+    display: block;
+}
+
+.button-1-closed {
+    display: none;
+} */
+
+.test-1-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+.test-1-closed {
+    display: none;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    position: fixed;
 }
