@@ -53,7 +53,7 @@ const Test = () => {
         //     <Test1 isOpen={isOpen} toggleTest1={toggleTest1} />
         // </AnimatePresence>
         <div className={styles["main-container"]}>
-            <button onClick={toggleTest1} className={isOpen ? styles["test-1-open"] : styles["test-1-close"]}>OPEN</button>
+            <button onClick={toggleTest1} className={isOpen ? styles["test-1-open"] : styles["test-1-closed"]}>OPEN</button>
             <Test1 isOpen={isOpen} toggleTest1={toggleTest1} />
         </div>
     )

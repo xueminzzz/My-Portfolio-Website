@@ -42,5 +42,8 @@
     height: 300px;
     width: 300px;
     border: 1px solid black;
-    position: fixed;
+}
+
+.box-closed {
+    display: none;
 }
